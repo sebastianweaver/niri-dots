@@ -1,0 +1,114 @@
+{
+	"niri/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+		    "default": "",
+			"active": ""
+        }
+	},
+    "clock": {
+		"interval": 1,
+		"format": "{:%R}",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+            "mode"          : "month",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "format": {
+				"months":   "<span color='#ffead3'><b>{}</b></span>",
+                "days":     "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":    "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today":    "<span color='#ff6699'><b><u>{}</u></b></span>"
+            },
+			"actions": {
+			"on-click-middle"   : "mode",
+			"on-click-right"    : "shift_up",
+			"on-click"          : "shift_down"
+			}
+	    }
+    },
+	"tray": {
+		"spacing": 10 
+	},
+    "custom/clipboard": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy",
+    },
+    "pulseaudio": {
+	    "format": "{icon}",
+        "format-muted": "",
+        "format-icons": ["", "", ""],
+        "tooltip-format": "Volume: {volume}%",
+        "on-click": "systemsettings kcm_pulseaudio"
+    },
+    "battery": {
+        "states": {
+            "warning": 20,
+            "critical": 5
+        },
+        "tooltip-format": "Charge: {capacity}%\nHealth: {health}%",
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "",
+        "format-alt": "{time} {icon}",
+        "on-scroll-up": "brightnessctl -c backlight set +1; notify-send -c system ' Brightness: '$(brightnessctl -m | cut -d',' -f4) ",
+        "on-scroll-down": "brightnessctl -c backlight set 1-; notify-send -c system ' Brightness: '$(brightnessctl -m | cut -d',' -f4) ",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "custom/swayidle": {
+        "format": "{}",
+        "escape": true,
+        "return-type": "json",
+        "exec": "$HOME/.config/waybar/modules/check-swayidle.sh",
+        "on-click": "$HOME/.config/scripts/change-idle-time.sh",
+        "restart-interval": 1 
+    },
+//    "custom/tuned": {
+//        "format": "{}",
+//        "escape": true,
+//        "return-type": "json",
+//        "exec": "$HOME/.config/waybar/modules/check-power-config.sh",
+//        "on-click-right": "$HOME/.config/waybar/modules/check-power-config.sh",
+//        "on-click": "$HOME/.config/scripts/change-power-profile.sh"
+//    },
+    "custom/power": {
+        "format": "󰤆",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
+// these didnt make the final cut but still here
+    "custom/notifications": {
+        "tooltip": false,
+        "format": "{} {icon}",
+        "return-type": "json",
+        "exec": "mako",
+        "on-click": "invoke-default-action",
+        "on-click-right": "dismiss-all",
+        "escape": true
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "",
+        "tooltip-format-wifi": "  {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz",
+        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click-right": "$HOME/.config/waybar/modules/wifiselector.sh",
+        "on-click-middle": "pkexec $HOME/.config/waybar/modules/vpn.sh wg0; pkill -SIGRTMIN+4 waybar"
+    },
+    "bluetooth": {
+        "format": "",
+        "format-alt": "",
+        "format-connected": "",
+        "format-connected-battery": "",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "on-click-right": "bluetoothctl"
+    }
+}

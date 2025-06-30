@@ -1,0 +1,93 @@
+-- Options are automatically loaded before lazy.nvim startup
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
+
+opts = {
+  integrations = {
+    aerial = true,
+    alpha = true,
+    cmp = true,
+    dashboard = true,
+    flash = true,
+    fzf = true,
+    grug_far = true,
+    gitsigns = true,
+    headlines = true,
+    illuminate = true,
+    indent_blankline = { enabled = true },
+    leap = true,
+    lsp_trouble = true,
+    mason = true,
+    markdown = true,
+    mini = true,
+    native_lsp = {
+      enabled = true,
+      underlines = {
+        errors = { "undercurl" },
+        hints = { "undercurl" },
+        warnings = { "undercurl" },
+        information = { "undercurl" },
+      },
+    },
+    navic = { enabled = true, custom_bg = "lualine" },
+    neotest = true,
+    neotree = true,
+    noice = true,
+    notify = true,
+    semantic_tokens = true,
+    snacks = true,
+    telescope = true,
+    treesitter = true,
+    treesitter_context = true,
+    which_key = true,
+  },
+}
+
+opts = {
+  highlight = { enable = true },
+  indent = { enable = true },
+  ensure_installed = {
+    "bash",
+    "c",
+    "diff",
+    "html",
+    "javascript",
+    "jsdoc",
+    "json",
+    "jsonc",
+    "lua",
+    "luadoc",
+    "luap",
+    "markdown",
+    "markdown_inline",
+    "printf",
+    "python",
+    "query",
+    "regex",
+    "toml",
+    "tsx",
+    "typescript",
+    "vim",
+    "vimdoc",
+    "xml",
+    "yaml",
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<C-space>",
+      node_incremental = "<C-space>",
+      scope_incremental = false,
+      node_decremental = "<bs>",
+    },
+  },
+  textobjects = {
+    move = {
+      enable = true,
+      goto_next_start = { ["]f"] = "@function.outer", ["]c"] = "@class.outer", ["]a"] = "@parameter.inner" },
+      goto_next_end = { ["]F"] = "@function.outer", ["]C"] = "@class.outer", ["]A"] = "@parameter.inner" },
+      goto_previous_start = { ["[f"] = "@function.outer", ["[c"] = "@class.outer", ["[a"] = "@parameter.inner" },
+      goto_previous_end = { ["[F"] = "@function.outer", ["[C"] = "@class.outer", ["[A"] = "@parameter.inner" },
+    },
+  },
+}

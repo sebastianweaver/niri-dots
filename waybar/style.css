@@ -1,0 +1,192 @@
+@import "macchiato.css";
+
+* {
+    font-family: NotoSans, FontAwesome6Free, SymbolsNerdFont, sans-serif;
+    font-size: 10pt;
+    min-height: 0;
+    padding: 1px;
+    margin: 1px;
+}
+
+window#waybar {
+    all: unset;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+tooltip {
+    background-color: @base;
+    border: solid @base;
+    border-radius: 8px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+@keyframes blink {
+    to {
+        background-color: @rosewater;
+        color: @crust;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#clock,
+#window,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#mpris,
+#load,
+#custom-tuned-ppd,
+#custome-sway-idle,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#weather,
+#mpd,
+#workspaces,
+#custom-clipboard,
+#custom-swayidle,
+#custom-power {
+    background-color: transparent;
+    color: @sky;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+#window {
+    color: @rosewater;
+}
+
+#workspaces {
+    font-weight: bold;
+    font-size: 8pt;
+    border: 2px solid @lavender;
+    padding: 0 10px;
+    background-color: @base;
+
+}
+
+  #workspaces button {
+      background-color: transparent;
+      color: @lavender;
+      padding: 0 5px;
+  }
+
+  #workspaces button.active {
+      color: @lavender;
+  }
+
+  #workspaces button.visible {
+      color: @base;
+  }
+
+  #workspaces button.empty {
+      color: @surface1;
+  }
+
+/* this is for the workspace button's highlight */
+  button {
+	    box-shadow: inset 0 0 transparent;
+	    color: @base;
+	    border: none;
+	    border-radius: 0px;
+  }
+
+  button:hover {
+      background: inherit;
+      box-shadow: inset 0px -1px @yellow
+  }
+
+#clock {
+    border: 2px solid @blue;
+    padding: 0 20px;
+    background-color: @base;
+    color: @blue;
+    font-weight: bold;
+}
+
+#tray {
+    border: 2px solid @sapphire;
+    padding: 0 20px;
+    background-color: @base;
+    color: @sapphire;
+    font-weight: bold;
+
+}
+
+#custom-clipboard  {
+    border: 2px solid @sky;
+    padding: 0 20px;
+    background-color: @base;
+    color: @sky;
+    font-weight: bold;
+}
+
+#pulseaudio {
+    border: 2px solid @teal;
+    padding: 0 20px;
+    background-color: @base;
+    color: @teal;
+    font-weight: bold;
+}
+
+  #pulseaudio.muted {
+      background-color: @maroon;
+      color: @rosewater;
+  }
+
+#battery {
+    border: 2px solid @green;
+    padding: 0 20px;
+    background-color: @base;
+    color: @green;
+    font-weight: bold;
+}
+
+  #battery.critical:not(.charging) {
+      background-color: @maroon;
+      color: @rosewater;
+      animation-name: blink;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+
+#custom-swayidle {
+    border: 2px solid @yellow;
+    padding: 0 20px;
+    background-color: @base;
+    color: @yellow;
+    font-weight: bold;
+}
+
+#custom-power {
+    border: 2px solid @maroon;
+    padding: 0 20px;
+    background-color: @base;
+    color: @maroon;
+    font-weight: bold;
+}
