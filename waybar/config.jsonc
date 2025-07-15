@@ -1,28 +1,36 @@
- {
-	"layer": "top",
-	"margin-top": -1,
-	"margin-left": -1,
-	"margin-right": -1,
-  "margin-bottom": -10,
-  "spacing": 3,
-  "height": 40,
-  "reload_style_on_change": true, 
-	"exclusive": true,
-	"include": [
-    "$HOME/.config/waybar/modules.jsonc"
-    ],
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "margin-bottom": 0,
+  "height": 32,
+  "reload_style_on_change": true,
+  "exclusive": true,
+  "include": ["$HOME/.config/waybar/modules.jsonc"],
   "modules-left": [
-    "niri/workspaces","clock"
+    "niri/workspaces",
+    "custom/arrow10",
+    "clock#date",
+    "clock#time",
+    "custom/arrow1"
   ],
-	"modules-center": [
-    ""
-    ],
-	"modules-right": [
+/*  "modules-center": [""],*/
+  "modules-right": [
+    "custom/arrow9",
     "tray",
+    "custom/arrow8",
     "custom/clipboard",
-	  "pulseaudio",
-	  "battery",
+    "custom/arrow7",
+    "pulseaudio",
+    "custom/arrow6",
+    "bluetooth",
+    "custom/arrow5",
+    "battery",
+    "custom/arrow4",
     "custom/swayidle",
-    "custom/power"	
-	]
- }
+    "custom/arrow3",
+    "custom/power"
+  ]
+}

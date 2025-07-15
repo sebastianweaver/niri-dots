@@ -1,50 +1,41 @@
-@import "macchiato.css";
+@import "colors-waybar.css";
 
-* {
-    font-family: NotoSans, FontAwesome6Free, SymbolsNerdFont, sans-serif;
-    font-size: 10pt;
-    min-height: 0;
-    padding: 1px;
-    margin: 1px;
-}
-
-window#waybar {
-    all: unset;
-    transition-property: background-color;
-    transition-duration: .5s;
-}
-
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
-tooltip {
-    background-color: @base;
-    border: solid @base;
-    border-radius: 8px;
-}
-
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
+/* keyframes */
 @keyframes blink {
-    to {
-        background-color: @rosewater;
-        color: @crust;
-    }
+  to {
+    background-color: @color0;
+    color: @background;
+  }
 }
 
-label:focus {
-    background-color: #000000;
+/* reset all styles */
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  text-shadow: none;
 }
 
+#waybar {
+  background: transparent;
+  color: @background;
+  font-family: JetBrains Mono, Siji;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.tooltip {
+  background-color: @foreground;
+  border: solid @foreground;
+  border-radius: 8px;
+}
+
+/* each modules */
 #clock,
-#window,
+#color1tooth,
 #battery,
 #cpu,
 #memory,
@@ -53,140 +44,190 @@ label:focus {
 #backlight,
 #network,
 #pulseaudio,
-#wireplumber,
-#custom-media,
 #mpris,
-#load,
-#custom-tuned-ppd,
 #custome-sway-idle,
-#tray,
-#mode,
 #idle_inhibitor,
-#scratchpad,
-#weather,
-#mpd,
-#workspaces,
 #custom-clipboard,
 #custom-swayidle,
 #custom-power {
-    background-color: transparent;
-    color: @sky;
-    opacity: 1;
-    border-radius: 20px;
+  padding-left: 14pt;
+  padding-right: 18pt;
+}
+
+#mode {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: blink-critical;
+  animation-duration: 1s;
+  color: @color15;
+  background-color: @background;
+}
+
+#workspaces button {
+  padding-left: 8pt;
+  padding-right: 8pt;
+  background-color: @color0;
+  color: @foreground;
+}
+
+#workspaces button.active {
+  color: @foreground;
+}
+
+#workspaces button.visible {
+  color: @foreground;
+}
+
+#workspaces button.empty {
+  color: @foreground;
+}
+
+/* this is for the workspace button's highlight */
+button {
+  box-shadow: inset 0 0 transparent;
+  color: @cursor;
+  border: none;
+  border-radius: 0px;
+}
+
+button:hover {
+  background: inherit;
+  box-shadow: inset 0px -1px transparent;
 }
 
 #window {
-    color: @rosewater;
+  color: @color19;
+  margin-right: 35pt;
+  margin-left: 35pt;
 }
-
-#workspaces {
-    font-weight: bold;
-    font-size: 8pt;
-    border: 2px solid @lavender;
-    padding: 0 10px;
-    background-color: @base;
-
-}
-
-  #workspaces button {
-      background-color: transparent;
-      color: @lavender;
-      padding: 0 5px;
-  }
-
-  #workspaces button.active {
-      color: @lavender;
-  }
-
-  #workspaces button.visible {
-      color: @base;
-  }
-
-  #workspaces button.empty {
-      color: @surface1;
-  }
-
-/* this is for the workspace button's highlight */
-  button {
-	    box-shadow: inset 0 0 transparent;
-	    color: @base;
-	    border: none;
-	    border-radius: 0px;
-  }
-
-  button:hover {
-      background: inherit;
-      box-shadow: inset 0px -1px @yellow
-  }
 
 #clock {
-    border: 2px solid @blue;
-    padding: 0 20px;
-    background-color: @base;
-    color: @blue;
-    font-weight: bold;
+  background-color: @color8;
+  color: @foreground;
+  font-weight: bold;
 }
 
 #tray {
-    border: 2px solid @sapphire;
-    padding: 0 20px;
-    background-color: @base;
-    color: @sapphire;
-    font-weight: bold;
-
+  background-color: @color0;
+  color: @foreground;
+  font-weight: bold;
+  padding-left: 14pt;
+  padding-right: 16pt;
 }
 
-#custom-clipboard  {
-    border: 2px solid @sky;
-    padding: 0 20px;
-    background-color: @base;
-    color: @sky;
-    font-weight: bold;
+#custom-clipboard {
+  background-color: @color6;
+  color: @background;
+  font-weight: bold;
 }
 
 #pulseaudio {
-    border: 2px solid @teal;
-    padding: 0 20px;
-    background-color: @base;
-    color: @teal;
-    font-weight: bold;
+  background-color: @color5;
+  color: @foreground;
+  font-weight: bold;
 }
 
-  #pulseaudio.muted {
-      background-color: @maroon;
-      color: @rosewater;
-  }
+#pulseaudio.muted {
+  color: @background;
+}
+
+#bluetooth {
+  background-color: @color4;
+  color: @foreground;
+  font-weight: bold;
+  font-size: 16pt;
+  padding-left: 14pt;
+  padding-right: 16pt;
+}
 
 #battery {
-    border: 2px solid @green;
-    padding: 0 20px;
-    background-color: @base;
-    color: @green;
-    font-weight: bold;
+  background-color: @color3;
+  color: @background;
+  font-weight: bold;
 }
 
-  #battery.critical:not(.charging) {
-      background-color: @maroon;
-      color: @rosewater;
-      animation-name: blink;
-      animation-duration: 0.5s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-  }
+#battery.critical:not(.charging) {
+  background-color: @color0;
+  color: @foreground;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
 #custom-swayidle {
-    border: 2px solid @yellow;
-    padding: 0 20px;
-    background-color: @base;
-    color: @yellow;
-    font-weight: bold;
+  background-color: @color2;
+  color: @background;
+  font-weight: bold;
+  padding-right: 14pt;
 }
 
 #custom-power {
-    border: 2px solid @maroon;
-    padding: 0 20px;
-    background-color: @base;
-    color: @maroon;
-    font-weight: bold;
+  background-color: @color1;
+  color: @background;
+  font-weight: bold;
+  font-size: 14pt;
+  padding-right: 22pt;
+}
+
+#custom-arrow1 {
+  font-size: 20pt;
+  color: @color8;
+  background: transparent;
+}
+
+#custom-arrow2 {
+  font-size: 20pt;
+  color: @color0;
+  background: @color0;
+}
+
+#custom-arrow3 {
+  font-size: 20pt;
+  color: @color1;
+  background: @color2;
+}
+
+#custom-arrow4 {
+  font-size: 20pt;
+  color: @color2;
+  background: @color3;
+}
+
+#custom-arrow5 {
+  font-size: 20pt;
+  color: @color3;
+  background: @color4;
+}
+
+#custom-arrow6 {
+  font-size: 20pt;
+  color: @color4;
+  background: @color5;
+}
+
+#custom-arrow7 {
+  font-size: 20pt;
+  color: @color5;
+  background: @color6;
+}
+
+#custom-arrow8 {
+  font-size: 20pt;
+  color: @color6;
+  background: @color0;
+}
+
+#custom-arrow9 {
+  font-size: 20pt;
+  color: @color0;
+  background: transparent;
+}
+
+#custom-arrow10 {
+  font-size: 20pt;
+  color: @color0;
+  background: @color8;
 }
