@@ -16,6 +16,20 @@
 
 /* customize things here */
 :root {{
+    /* color shades */
+	--pink: oklch(from {color0} l c h);
+  --pink-1: oklch(from var(--pink) calc(l - 0.1) c h);
+  --pink-2: oklch(from var(--pink) calc(l - 0.2) c h);
+  --purple: oklch(from {foreground} l c h);
+  --purple-1: oklch(from {foreground} calc(l - 0.1) c h);
+  --purple-2: oklch(from {foreground} calc(l - 0.2) c h);
+  --cyan: oklch(from {color2} l c h);
+  --yellow: oklch(from {color3} l c h);
+  --green: oklch(from {color5} l c h);
+  --green-1: oklch(from var(--green) calc(l - 0.1) c h);
+  --green-2: oklch(from var(--green) calc(l - 0.2) c h);
+
+	--colors: on; /* off: discord default colors, on: midnight custom colors */
 	--font: 'DM Mono'; /* UI font name. it must be installed on your system. */
 	letter-spacing: -0.05ch; /* decreases letter spacing for better readability. */
 	font-weight: 300; /* UI font weight. */
@@ -26,10 +40,10 @@
 	--panel-roundness: 0px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
 
 	/* background colors */
-	--bg-0: oklch(from {color0} l c h); /* main background color. */
-	--bg-1: oklch(from {background} calc(l + 0.04) c h); /* background color for secondary elements like code blocks, embeds, etc. */
-	--bg-2: oklch(from {background} calc(l + 0.08) c h); /* color of neutral buttons. */
-	--bg-3: oklch(from {background} calc(l + 0.12) c h); /* color of neutral buttons when hovered. */
+	--bg-4: oklch(from {background} l c h); /* main background color. */
+	--bg-1: oklch(from {background} calc(l + 0.02) c h); /* background color for secondary elements like code blocks, embeds, etc. */
+	--bg-2: oklch(from {background} calc(l + 0.04) c h); /* color of neutral buttons. */
+	--bg-3: oklch(from {background} calc(l + 0.06) c h); /* color of neutral buttons when hovered. */
 
   /* transparency/blur options */
   /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
@@ -71,8 +85,8 @@
 	/* borders */
 	--border-width: 2px; /* panel border thickness. */
 	--border-color: var(--bg-3); /* panel border color. */
-	--border-hover-color: var(--acc-0); /* panel border color when hovered. */
-	--border-transition: 0.2s ease; /* panel border transition. */
+  /* --border-hover-color: var(--bg-3);  panel border color when hovered. */
+	/*--border-transition: 0.2s ease; panel border transition. */
 
 	/* status dot colors */
 	--online-dot: var(--green); /* color of online dot. */
@@ -87,17 +101,4 @@
 	--mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%); /* overlay color of messages that mention you when hovered. */
 	--reply-overlay: var(--active); /* overlay color of message you are replying to. */
 	--reply-hover-overlay: var(--hover); /* overlay color of message you are replying to when hovered. */
-
-	/* color shades */
-	--pink: oklch(from {color0} l c h);
-	--pink-1: oklch(from var(--pink) calc(l - 0.1) c h);
-	--pink-2: oklch(from var(--pink) calc(l - 0.2) c h);
-	--purple: oklch(from {color1} l c h);
-	--purple-1: oklch(from var(--purple) calc(l - 0.1) c h);
-	--purple-2: oklch(from var(--purple) calc(l - 0.2) c h);
-	--cyan: oklch(from {color2} l c h);
-	--yellow: oklch(from {color3} l c h);
-	--green: oklch(from {color4} l c h);
-	--green-1: oklch(from var(--green) calc(l - 0.1) c h);
-	--green-2: oklch(from var(--green) calc(l - 0.2) c h);
 }}

@@ -4,11 +4,11 @@
         "showToasts": true,
         "mediaKeys": false,
         "bdContextMenu": true,
-        "themeAttributes": true
+        "themeAttributes": false
     },
     "addons": {
         "addonErrors": true,
-        "editAction": "detached",
+        "editAction": "system",
         "checkForUpdates": true,
         "updateInterval": "3"
     },
@@ -20,7 +20,7 @@
     "customcss": {
         "customcss": true,
         "liveUpdate": true,
-        "openAction": "detached"
+        "openAction": "settings"
     },
     "editor": {
         "lineNumbers": true,
@@ -33,7 +33,7 @@
     "window": {
         "transparency": true,
         "removeMinimumSize": true,
-        "frame": true,
+        "frame": false,
         "inAppTrafficLights": false
     },
     "developer": {
