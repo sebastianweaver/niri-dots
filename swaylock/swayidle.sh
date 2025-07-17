@@ -1,0 +1,1 @@
+/home/cbash/.config/scripts/swayidle.sh

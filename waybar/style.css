@@ -22,7 +22,9 @@
 #waybar {
   background: transparent;
   color: @background;
-  font-family: JetBrains Mono, Siji;
+  font-family:
+    JetBrains Mono,
+    Siji;
   font-size: 11pt;
   font-weight: bold;
 }
@@ -65,8 +67,8 @@
 }
 
 #workspaces button {
-  padding-left: 8pt;
-  padding-right: 8pt;
+  padding-left: 13pt;
+  padding-right: 13pt;
   background-color: @color0;
   color: @foreground;
 }
@@ -96,6 +98,12 @@ button:hover {
   box-shadow: inset 0px -1px transparent;
 }
 
+#custom-arrow10 {
+  font-size: 20pt;
+  color: @color0;
+  background: @color4;
+}
+
 #window {
   color: @color19;
   margin-right: 35pt;
@@ -103,23 +111,65 @@ button:hover {
 }
 
 #clock {
-  background-color: @color8;
-  color: @foreground;
+  background-color: @color4;
+  color: @background;
   font-weight: bold;
 }
 
+#custom-arrow11 {
+  font-size: 20pt;
+  color: @color4;
+  background: @color0;
+}
+
+#custom-arrow12 {
+  font-size: 20pt;
+  color: @color4;
+  background: @color0;
+}
+
+#custom-arrow13 {
+  font-size: 20pt;
+  color: @color0;
+  background: transparent;
+}
+
+#custom-arrow14 {
+  font-size: 20pt;
+  color: @color0;
+  background: transparent;
+}
+
+#custom-arrow9 {
+  font-size: 20pt;
+  color: @color3;
+  background: @color0;
+}
+
 #tray {
-  background-color: @color0;
+  background-color: @color3;
   color: @foreground;
   font-weight: bold;
   padding-left: 14pt;
   padding-right: 16pt;
 }
 
+#custom-arrow8 {
+  font-size: 20pt;
+  color: @color15;
+  background: @color3;
+}
+
 #custom-clipboard {
-  background-color: @color6;
+  background-color: @color15;
   color: @background;
   font-weight: bold;
+}
+
+#custom-arrow7 {
+  font-size: 20pt;
+  color: @color5;
+  background: @color15;
 }
 
 #pulseaudio {
@@ -130,20 +180,33 @@ button:hover {
 
 #pulseaudio.muted {
   color: @background;
+  font-weight: bold;
+}
+
+#custom-arrow6 {
+  font-size: 20pt;
+  color: @color15;
+  background: @color5;
 }
 
 #bluetooth {
-  background-color: @color4;
-  color: @foreground;
+  background-color: @color15;
+  color: @background;
   font-weight: bold;
   font-size: 16pt;
   padding-left: 14pt;
   padding-right: 16pt;
 }
 
+#custom-arrow5 {
+  font-size: 20pt;
+  color: @color3;
+  background: @color15;
+}
+
 #battery {
   background-color: @color3;
-  color: @background;
+  color: @foreground;
   font-weight: bold;
 }
 
@@ -157,77 +220,29 @@ button:hover {
   animation-direction: alternate;
 }
 
+#custom-arrow4 {
+  font-size: 20pt;
+  color: @color4;
+  background: @color3;
+}
+
 #custom-swayidle {
-  background-color: @color2;
+  background-color: @color4;
   color: @background;
   font-weight: bold;
   padding-right: 14pt;
 }
 
-#custom-power {
-  background-color: @color1;
-  color: @background;
-  font-weight: bold;
-  font-size: 14pt;
-  padding-right: 22pt;
-}
-
-#custom-arrow1 {
-  font-size: 20pt;
-  color: @color8;
-  background: transparent;
-}
-
-#custom-arrow2 {
-  font-size: 20pt;
-  color: @color0;
-  background: @color0;
-}
-
 #custom-arrow3 {
   font-size: 20pt;
-  color: @color1;
-  background: @color2;
-}
-
-#custom-arrow4 {
-  font-size: 20pt;
-  color: @color2;
-  background: @color3;
-}
-
-#custom-arrow5 {
-  font-size: 20pt;
-  color: @color3;
+  color: @color0;
   background: @color4;
 }
 
-#custom-arrow6 {
-  font-size: 20pt;
-  color: @color4;
-  background: @color5;
-}
-
-#custom-arrow7 {
-  font-size: 20pt;
-  color: @color5;
-  background: @color6;
-}
-
-#custom-arrow8 {
-  font-size: 20pt;
-  color: @color6;
-  background: @color0;
-}
-
-#custom-arrow9 {
-  font-size: 20pt;
-  color: @color0;
-  background: transparent;
-}
-
-#custom-arrow10 {
-  font-size: 20pt;
-  color: @color0;
-  background: @color8;
+#custom-power {
+  background-color: @color0;
+  color: @cursor;
+  font-weight: bold;
+  font-size: 14pt;
+  padding-right: 22pt;
 }

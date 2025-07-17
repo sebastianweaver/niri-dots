@@ -1,12 +1,12 @@
 {
   "niri/mode": {
     "format": "{}",
-    "tooltip": false
+    "tooltip": false,
   },
   "niri/window": {
     "format": "{}",
     "max-length": 30,
-    "tooltip": false
+    "tooltip": false,
   },
   "niri/workspaces": {
     "all-outputs": true,
@@ -15,7 +15,7 @@
       "1": [],
       "2": [],
       "3": [],
-      "4": []
+      "4": [],
     },
     "format-icons": {
       "1": "",
@@ -23,41 +23,41 @@
       "3": "",
       "4": "",
       "default": "",
-      "active": ""
+      "active": "",
     },
     "disable-scroll-wraparound": true,
     "smooth-scrolling-threshold": 4,
-    "enable-bar-scroll": true
+    "enable-bar-scroll": true,
   },
   "clock#time": {
     "interval": 1,
     "format": "{:%R}",
-    "tooltip": false
+    "tooltip": false,
   },
   "clock#date": {
     "interval": 20,
     "format": "{:%e %b %Y}",
-    "tooltip": false
+    "tooltip": false,
   },
   "tray": {
-    "spacing": 10
+    "spacing": 10,
   },
   "custom/clipboard": {
     "format": "",
     "tooltip": false,
-    "on-click": "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"
+    "on-click": "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy",
   },
   "pulseaudio": {
     "format": "{icon}",
     "format-muted": "",
     "format-icons": ["", "", ""],
     "tooltip-format": "Volume: {volume}%",
-    "on-click": "kitty -e  kcm_pulseaudio"
+    "on-click": "kitty -e  kcm_pulseaudio",
   },
   "battery": {
     "states": {
       "warning": 20,
-      "critical": 5
+      "critical": 5,
     },
     "tooltip-format": "Charge: {capacity}%\nHealth: {health}%",
     "format": "{icon}",
@@ -66,7 +66,7 @@
     "format-alt": "{time} {icon}",
     "on-scroll-up": "brightnessctl -c backlight set +1; notify-send -c system ' Brightness: '$(brightnessctl -m | cut -d',' -f4) ",
     "on-scroll-down": "brightnessctl -c backlight set 1-; notify-send -c system ' Brightness: '$(brightnessctl -m | cut -d',' -f4) ",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["", "", "", "", ""],
   },
   "custom/swayidle": {
     "format": "{}",
@@ -74,12 +74,12 @@
     "return-type": "json",
     "exec": "$HOME/.config/waybar/modules/check-swayidle.sh",
     "on-click": "$HOME/.config/scripts/change-idle-time.sh",
-    "restart-interval": 5
+    "restart-interval": 5,
   },
   "custom/power": {
     "format": "󰤆",
     "tooltip": false,
-    "on-click": "wlogout"
+    "on-click": "wlogout",
   },
   "custom/notifications": {
     "tooltip": false,
@@ -88,7 +88,7 @@
     "exec": "mako",
     "on-click": "invoke-default-action",
     "on-click-right": "dismiss-all",
-    "escape": true
+    "escape": true,
   },
   "network": {
     "format-wifi": "",
@@ -99,7 +99,7 @@
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
     "on-click-right": "$HOME/.config/waybar/modules/wifiselector.sh",
-    "on-click-middle": "pkexec $HOME/.config/waybar/modules/vpn.sh wg0; pkill -SIGRTMIN+4 waybar"
+    "on-click-middle": "pkexec $HOME/.config/waybar/modules/vpn.sh wg0; pkill -SIGRTMIN+4 waybar",
   },
   "bluetooth": {
     "format": "",
@@ -110,46 +110,62 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    "on-click": "kitty -e bluetuith"
+    "on-click": "kitty -e bluetuith",
   },
   "custom/arrow1": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/arrow2": {
-    "format": "",
-    "tooltip": false
+    "format": "",
+    "tooltip": false,
   },
   "custom/arrow3": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/arrow4": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/arrow5": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/arrow6": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/arrow7": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/arrow8": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/arrow9": {
     "format": "",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/arrow10": {
     "format": "",
-    "tooltip": false
-  }
+    "tooltip": false,
+  },
+  "custom/arrow11": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/arrow12": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/arrow13": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/arrow14": {
+    "format": "",
+    "tooltip": false,
+  },
 }

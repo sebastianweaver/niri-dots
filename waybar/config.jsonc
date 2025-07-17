@@ -14,10 +14,12 @@
     "custom/arrow10",
     "clock#date",
     "clock#time",
-    "custom/arrow1"
+    "custom/arrow12",
+    "custom/arrow13",
   ],
-/*  "modules-center": [""],*/
+  /*  "modules-center": [""],*/
   "modules-right": [
+    "custom/arrow14",
     "custom/arrow9",
     "tray",
     "custom/arrow8",
@@ -31,6 +33,6 @@
     "custom/arrow4",
     "custom/swayidle",
     "custom/arrow3",
-    "custom/power"
-  ]
+    "custom/power",
+  ],
 }

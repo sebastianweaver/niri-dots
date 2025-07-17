@@ -26,7 +26,7 @@ def get_args():
     parser.add_argument(
         "-wp",
         "--wp-dir",
-        default="~/wallpapers/",
+        default="~/Pictures/Wallpapers/",
         help="path to the wallpaper directory",
     )
     parser.add_argument(

@@ -11,7 +11,7 @@ theme[title]="#c5c7c7"
 theme[hi_fg]="#5B5E57"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#5C7681"
+theme[selected_bg]="#6B7377"
 
 # Foreground color of selected item in processes box
 theme[selected_fg]="#c5c7c7"
@@ -44,46 +44,46 @@ theme[proc_box]="#747C83"
 theme[div_line]="#747C83"
 
 # Temperature graph colors
-theme[temp_start]="#5C7681"
-theme[temp_mid]="#6B7377"
-theme[temp_end]="#927361"
+theme[temp_start]="#6B7377"
+theme[temp_mid]="#927361"
+theme[temp_end]="#5C7681"
 
 # CPU graph colors
-theme[cpu_start]="#5C7681"
-theme[cpu_mid]="#6B7377"
-theme[cpu_end]="#927361"
+theme[cpu_start]="#6B7377"
+theme[cpu_mid]="#927361"
+theme[cpu_end]="#5C7681"
 
 # Mem/Disk free meter
-theme[free_start]="#5C7681"
-theme[free_mid]="#6B7377"
-theme[free_end]="#927361"
+theme[free_start]="#6B7377"
+theme[free_mid]="#927361"
+theme[free_end]="#5C7681"
 
 # Mem/Disk cached meter
-theme[cached_start]="#5C7681"
-theme[cached_mid]="#6B7377"
-theme[cached_end]="#927361"
+theme[cached_start]="#6B7377"
+theme[cached_mid]="#927361"
+theme[cached_end]="#5C7681"
 
 # Mem/Disk available meter
-theme[available_start]="#5C7681"
-theme[available_mid]="#6B7377"
-theme[available_end]="#927361"
+theme[available_start]="#6B7377"
+theme[available_mid]="#927361"
+theme[available_end]="#5C7681"
 
 # Mem/Disk used meter
-theme[used_start]="#5C7681"
-theme[used_mid]="#6B7377"
-theme[used_end]="#927361"
+theme[used_start]="#6B7377"
+theme[used_mid]="#927361"
+theme[used_end]="#5C7681"
 
 # Download graph colors
-theme[download_start]="#5C7681"
-theme[download_mid]="#6B7377"
-theme[download_end]="#927361"
+theme[download_start]="#6B7377"
+theme[download_mid]="#927361"
+theme[download_end]="#5C7681"
 
 # Upload graph colors
-theme[upload_start]="#5C7681"
-theme[upload_mid]="#6B7377"
-theme[upload_end]="#927361"
+theme[upload_start]="#6B7377"
+theme[upload_mid]="#927361"
+theme[upload_end]="#5C7681"
 
 # Process box color gradient for threads, mem and cpu usage
-theme[process_start]="#5C7681"
-theme[process_mid]="#6B7377"
-theme[process_end]="#927361"
+theme[process_start]="#6B7377"
+theme[process_mid]="#927361"
+theme[process_end]="#5C7681"
