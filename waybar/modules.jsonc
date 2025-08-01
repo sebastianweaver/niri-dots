@@ -52,7 +52,7 @@
     "format-muted": "",
     "format-icons": ["", "", ""],
     "tooltip-format": "Volume: {volume}%",
-    "on-click": "kitty -e  kcm_pulseaudio",
+    "on-click": "pavucontrol",
   },
   "battery": {
     "states": {

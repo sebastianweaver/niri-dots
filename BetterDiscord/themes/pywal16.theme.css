@@ -17,15 +17,15 @@
 /* customize things here */
 :root {
     /* color shades */
-	--pink: oklch(from #1a2122 l c h);
+	--pink: oklch(from #1b0c0c l c h);
   --pink-1: oklch(from var(--pink) calc(l - 0.1) c h);
   --pink-2: oklch(from var(--pink) calc(l - 0.2) c h);
-  --purple: oklch(from #c5c7c7 l c h);
-  --purple-1: oklch(from #c5c7c7 calc(l - 0.1) c h);
-  --purple-2: oklch(from #c5c7c7 calc(l - 0.2) c h);
-  --cyan: oklch(from #546A6F l c h);
-  --yellow: oklch(from #6B7377 l c h);
-  --green: oklch(from #5C7681 l c h);
+  --purple: oklch(from #c6c2c2 l c h);
+  --purple-1: oklch(from #c6c2c2 calc(l - 0.1) c h);
+  --purple-2: oklch(from #c6c2c2 calc(l - 0.2) c h);
+  --cyan: oklch(from #838379 l c h);
+  --yellow: oklch(from #627B83 l c h);
+  --green: oklch(from #73898C l c h);
   --green-1: oklch(from var(--green) calc(l - 0.1) c h);
   --green-2: oklch(from var(--green) calc(l - 0.2) c h);
 
@@ -40,10 +40,10 @@
 	--panel-roundness: 0px; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
 
 	/* background colors */
-	--bg-4: oklch(from #1a2122 l c h); /* main background color. */
-	--bg-1: oklch(from #1a2122 calc(l + 0.02) c h); /* background color for secondary elements like code blocks, embeds, etc. */
-	--bg-2: oklch(from #1a2122 calc(l + 0.04) c h); /* color of neutral buttons. */
-	--bg-3: oklch(from #1a2122 calc(l + 0.06) c h); /* color of neutral buttons when hovered. */
+	--bg-4: oklch(from #1b0c0c l c h); /* main background color. */
+	--bg-1: oklch(from #1b0c0c calc(l + 0.02) c h); /* background color for secondary elements like code blocks, embeds, etc. */
+	--bg-2: oklch(from #1b0c0c calc(l + 0.04) c h); /* color of neutral buttons. */
+	--bg-3: oklch(from #1b0c0c calc(l + 0.06) c h); /* color of neutral buttons when hovered. */
 
   /* transparency/blur options */
   /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
@@ -72,10 +72,10 @@
 	/* text colors */
 	--txt-dark: var(--bg-0); /* color of dark text on colored backgrounds. */
 	--txt-link: var(--cyan); /* color of links. */
-	--txt-0: oklch(from #c5c7c7 100% c h); /* color of bright/white text. */
-	--txt-1: oklch(from #c5c7c7 80% c h); /* main text color. */
-	--txt-2: oklch(from #c5c7c7 60% c h); /* color of secondary text like channel list. */
-	--txt-3: oklch(from #c5c7c7 40% c h); /* color of muted text. */
+	--txt-0: oklch(from #c6c2c2 100% c h); /* color of bright/white text. */
+	--txt-1: oklch(from #c6c2c2 80% c h); /* main text color. */
+	--txt-2: oklch(from #c6c2c2 60% c h); /* color of secondary text like channel list. */
+	--txt-3: oklch(from #c6c2c2 40% c h); /* color of muted text. */
 
 	/* accent colors */
 	--acc-0: var(--purple); /* main accent color. */
