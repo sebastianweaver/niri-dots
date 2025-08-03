@@ -205,14 +205,14 @@ binds {{
 
 //    Mod+Shift+Right       {{ focus-monitor-right; }} example, but not using
 
-    Mod+Shift+Ctrl+J      {{ focus-workspace-down; }}
-    Mod+Shift+Ctrl+K      {{ focus-workspace-up; }}
+    Mod+Shift+Ctrl+D      {{ move-workspace-down; }}
+    Mod+Shift+Ctrl+U      {{ move-workspace-up; }}
 
-    Mod+Shift+J           {{ move-workspace-down; }}
-    Mod+Shift+K           {{ move-workspace-up; }}
+    Mod+Shift+D           {{ focus-workspace-down; }}
+    Mod+Shift+U           {{ focus-workspace-up; }}
 
-    Mod+Ctrl+J            {{ move-column-to-workspace-down; }}
-    Mod+Ctrl+K            {{ move-column-to-workspace-up; }}
+    Mod+Ctrl+D            {{ move-column-to-workspace-down; }}
+    Mod+Ctrl+U            {{ move-column-to-workspace-up; }}
 
 //    Mod+Shift+Ctrl+Left   {{ move-column-to-monitor-left; }}
 //    Mod+Shift+Ctrl+Down   {{ move-column-to-monitor-down; }}
