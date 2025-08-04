@@ -1,0 +1,12 @@
+function pywal() {
+  wal -i "$1" -o pywal-discord ; $XDG_CONFIG_HOME/mako/update-theme.sh ; $XDG_CONFIG_HOME/scripts/build-gradience.py && gradience-cli apply -n pywal ; cp "${HOME}/.cache/wal/niri-config.kdl" "${HOME}/.config/niri/config.kdl" ; echo "[NIRI] Niri config applied" ; systemctl --user reload waybar.service ; echo "[WAYBAR] Waybar Reloaded";
+}
+
+function colors () {
+  for i in {0..255}
+    do
+    print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}
+    done
+}
+
+
