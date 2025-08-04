@@ -46,6 +46,7 @@ ethstatus
 extra-cmake-modules
 fastfetch
 file-roller
+firefox
 flatpak
 fuzzel
 game-devices-udev
@@ -132,7 +133,6 @@ paper-icon-theme-git
 pavucontrol
 peaclock
 pipes.sh
-polychromatic
 power-profiles-daemon
 powerline
 powerline-fonts
@@ -311,7 +311,6 @@ yaru-icon-theme
 yay
 yay-debug
 yt-dlp
-zen-browser-bin
 zsh
 zsh-autocomplete
 zsh-autosuggestions

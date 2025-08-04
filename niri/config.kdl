@@ -125,7 +125,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"zen$"# title="^Picture-in-Picture$"
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id="krita" title=r#"(.*)image(.*)$"#
     match app-id="krita" title=r#"Open(.*)$"#
     match app-id="krita" title=r#"(.*)Properties(.*)$"#
