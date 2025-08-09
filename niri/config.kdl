@@ -169,7 +169,7 @@ binds {
     Mod+I                 hotkey-overlay-title="Change Idle Time"           { spawn "sh" "-c" "$HOME/.config/scripts/change-idle-time.sh";}
     Mod+Ctrl+P            hotkey-overlay-title="Power Off Monitors"         { spawn "sh" "-c" "niri msg action power-off-monitors | $HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+P           hotkey-overlay-title="Change Power Profile"       { spawn "sh" "-c" "$HOME/.config/scripts/change-power-profile.sh";}
-    Mod+Shift+L           hotkey-overlay-title="Lock Computer"              { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
+    Mod+Escape              hotkey-overlay-title="Lock Computer"              { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+W           hotkey-overlay-title="Reload Waybar"              { spawn "systemctl" "--user" "restart" "waybar.service"; }
     Mod+Shift+B           hotkey-overlay-title="Reload Swaybg.Service"      { spawn "systemctl" "--user" "restart" "swaybg.service"; }
     Mod+Shift+C           hotkey-overlay-title="Open Clipboard"             { spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
@@ -205,14 +205,14 @@ binds {
 
 //    Mod+Shift+Right       { focus-monitor-right; } example, but not using
 
-    Mod+Shift+Ctrl+D      { move-workspace-down; }
-    Mod+Shift+Ctrl+U      { move-workspace-up; }
+    Mod+Shift+Ctrl+J      { move-workspace-down; }
+    Mod+Shift+Ctrl+K      { move-workspace-up; }
 
-    Mod+Shift+D           { focus-workspace-down; }
-    Mod+Shift+U           { focus-workspace-up; }
+    Mod+Shift+J           { focus-workspace-down; }
+    Mod+Shift+K           { focus-workspace-up; }
 
-    Mod+Ctrl+D            { move-column-to-workspace-down; }
-    Mod+Ctrl+U            { move-column-to-workspace-up; }
+    Mod+Ctrl+J            { move-column-to-workspace-down; }
+    Mod+Ctrl+K            { move-column-to-workspace-up; }
 
 //    Mod+Shift+Ctrl+Left   { move-column-to-monitor-left; }
 //    Mod+Shift+Ctrl+Down   { move-column-to-monitor-down; }
@@ -280,7 +280,7 @@ binds {
     Ctrl+Print        { screenshot-screen; }
     Alt+Print         { screenshot-window; }
     
-    Mod+Escape        allow-inhibiting=false      { toggle-keyboard-shortcuts-inhibit; }
+    Mod+Shift+Escape        allow-inhibiting=false      { toggle-keyboard-shortcuts-inhibit; }
     
     Mod+Shift+E       { quit; }
     Ctrl+Alt+Delete   { quit; }
