@@ -24,7 +24,7 @@ output "eDP-1" {
     scale 1
     transform "normal"
     position x=1280 y=0
-    backdrop-color "#1b0c0c"
+    backdrop-color "#101725"
 }
 
 cursor {
@@ -45,15 +45,15 @@ layout {
     default-column-width { proportion 0.5; }
     focus-ring {
         width 3
-        active-color "#687272"
-        inactive-color "#1b0c0c"
+        active-color "#4C4D4F"
+        inactive-color "#101725"
         //active-gradient from="#b7bdf8" to="#181926" angle=0
     }
     border { 
        off 
         width 3 
-        active-color "#687272"
-        inactive-color "#1b0c0c"
+        active-color "#4C4D4F"
+        inactive-color "#101725"
         //urgent-color "#e5c890"
     }
     shadow {
@@ -169,7 +169,7 @@ binds {
     Mod+I                 hotkey-overlay-title="Change Idle Time"           { spawn "sh" "-c" "$HOME/.config/scripts/change-idle-time.sh";}
     Mod+Ctrl+P            hotkey-overlay-title="Power Off Monitors"         { spawn "sh" "-c" "niri msg action power-off-monitors | $HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+P           hotkey-overlay-title="Change Power Profile"       { spawn "sh" "-c" "$HOME/.config/scripts/change-power-profile.sh";}
-    Mod+Escape              hotkey-overlay-title="Lock Computer"              { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
+    Mod+Escape           hotkey-overlay-title="Lock Computer"              { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+W           hotkey-overlay-title="Reload Waybar"              { spawn "systemctl" "--user" "restart" "waybar.service"; }
     Mod+Shift+B           hotkey-overlay-title="Reload Swaybg.Service"      { spawn "systemctl" "--user" "restart" "swaybg.service"; }
     Mod+Shift+C           hotkey-overlay-title="Open Clipboard"             { spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
@@ -280,7 +280,7 @@ binds {
     Ctrl+Print        { screenshot-screen; }
     Alt+Print         { screenshot-window; }
     
-    Mod+Shift+Escape        allow-inhibiting=false      { toggle-keyboard-shortcuts-inhibit; }
+ //   Mod+Escape        allow-inhibiting=false      { toggle-keyboard-shortcuts-inhibit; }
     
     Mod+Shift+E       { quit; }
     Ctrl+Alt+Delete   { quit; }
