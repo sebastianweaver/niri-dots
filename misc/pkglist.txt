@@ -43,6 +43,7 @@ efibootmgr
 electron
 eog
 ethstatus
+evtest
 extra-cmake-modules
 fastfetch
 file-roller
@@ -138,7 +139,6 @@ powerline
 powerline-fonts
 powertop
 python-ignis
-python-openrazer-git
 python-pip
 python-pyusb
 python-pywal16

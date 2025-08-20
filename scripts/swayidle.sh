@@ -10,28 +10,28 @@ case $idle_time in
   swayidle -w \
     timeout 300 $lock \
     timeout 420 'niri msg action power-off-monitors' \
-    timeout 600 'systemctl suspend' \
+    timeout 600 'systemctl suspend-then-hibernate' \
     before-sleep $lock
   ;;
 "10 minutes")
   swayidle -w \
     timeout 600 $lock \
     timeout 720 'niri msg action power-off-monitors' \
-    timeout 1200 'systemctl suspend' \
+    timeout 1200 'systemctl suspend-then-hibernate' \
     before-sleep $lock
   ;;
 "20 minutes")
   swayidle -w \
     timeout 1200 $lock \
     timeout 1500 'niri msg action power-off-monitors' \
-    timeout 2400 'systemctl suspend' \
+    timeout 2400 'systemctl suspend-then-hibernate' \
     before-sleep $lock
   ;;
 "30 minutes")
   swayidle -w \
     timeout 1800 $lock \
     timeout 2100 'niri msg action power-off-monitors' \
-    timeout 3600 'systemctl suspend' \
+    timeout 3600 'systemctl suspend-then-hibernate' \
     before-sleep $lock
   ;;
 "infinity") ;;
