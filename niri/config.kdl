@@ -72,6 +72,7 @@ spawn-at-startup "pulseaudio" "-D"
 spawn-at-startup "sh" "-c" "pkill swayidle; echo '10 minutes' > $HOME/.local/state/idle-time; $HOME/.config/scripts/swayidle.sh"
 spawn-at-startup "discord" "--start-minimized" "--no-sandbox" "--enable-accelerated-mjpeg-decode" "--enable-accelerated-video" "--ignore-gpu-blacklist" "--enable-native-gpu-memory-buffers" "--enable-gpu-rasterization"
 spawn-at-startup "wal" "-R"
+spawn-at-startup "systemctl" "--user" "restart" "waybar.service"
 
 prefer-no-csd
 

@@ -74,6 +74,7 @@ kitty
 kmon-git
 kvantum
 kwin-effects-forceblur
+lazygit
 lib32-nvidia-utils
 libplist-git
 libreoffice-fresh
@@ -139,6 +140,7 @@ powerline
 powerline-fonts
 powertop
 python-ignis
+python-openrazer-git
 python-pip
 python-pyusb
 python-pywal16
@@ -233,6 +235,7 @@ ttf-victor-mono-nerd
 ttf-zed-mono-nerd
 unimatrix-git
 unrar
+uv
 vdpauinfo
 vim
 vim-plug
