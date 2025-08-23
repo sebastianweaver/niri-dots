@@ -24,7 +24,7 @@ output "eDP-1" {
     scale 1
     transform "normal"
     position x=1280 y=0
-    backdrop-color "#101725"
+    backdrop-color "#06090e"
 }
 
 cursor {
@@ -45,15 +45,15 @@ layout {
     default-column-width { proportion 0.5; }
     focus-ring {
         width 3
-        active-color "#4C4D4F"
-        inactive-color "#101725"
+        active-color "#9B8D69"
+        inactive-color "#06090e"
         //active-gradient from="#b7bdf8" to="#181926" angle=0
     }
     border { 
        off 
         width 3 
-        active-color "#4C4D4F"
-        inactive-color "#101725"
+        active-color "#9B8D69"
+        inactive-color "#06090e"
         //urgent-color "#e5c890"
     }
     shadow {

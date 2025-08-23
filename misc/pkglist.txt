@@ -27,6 +27,7 @@ bluez-utils
 bpytop
 breeze-adapta-cursor-theme-git
 brightnessctl
+calcure
 cantarell-fonts
 capitaine-cursors
 catppuccin-cursors-macchiato
@@ -63,6 +64,7 @@ gnome-tweaks
 gnome-usage
 gnome-video-effects
 gnu-free-fonts
+googledot-cursor-theme
 gradience
 greetd-gtkgreet
 greetd-tuigreet
