@@ -1,6 +1,6 @@
 defaults:
   date_format: '%d/%m'
-  first_day_of_week: 6
+  first_day_of_week: 0
   period: week
   plot_marker: braille
   round_decimals: 2
@@ -42,7 +42,7 @@ state:
     savings_percentage: 0.2
     wants_spending_amount: 0
     wants_spending_assess_metric: percentageQuota
-    wants_spending_percentage: 0.2
+    wants_spending_percentage: 0.1
   check_for_updates: true
   footer_visibility: true
   theme: tokyo-night

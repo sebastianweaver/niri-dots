@@ -29,7 +29,7 @@ output "eDP-1" {
 
 cursor {
   //    xcursor-theme "catppuccin-macchiato-dark-cursors"
-    xcursor-theme "GoogleDot-Black" 
+    xcursor-theme "GoogleDot-Black"
     xcursor-size 20
     hide-after-inactive-ms 5000
     hide-when-typing
@@ -37,7 +37,8 @@ cursor {
 
 layout {
     gaps 14
-    center-focused-column "never"
+    center-focused-column "on-overflow"
+    always-center-single-column
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
@@ -163,15 +164,15 @@ window-rule {
 binds {
     Mod+Shift+Slash                                                         { show-hotkey-overlay; }
 
-    Mod+T                 hotkey-overlay-title="Open Terminal: kitty"       { spawn "kitty"; }
-    Mod+Shift+T           hotkey-overlay-title="Open Terminal: kitty+tmux"  { spawn "kitty" "-e" "tmux"; }
+    Mod+T                 { spawn "kitty"; }
+    Mod+Shift+T           { spawn "kitty" "-e" "tmux"; }
 
-    Mod+D                 hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+E                 hotkey-overlay-title="Open File Manager"          { spawn "nautilus"; }
+    Mod+D                 { spawn "fuzzel"; }
+    Mod+E                 { spawn "nautilus"; }
     Mod+I                 hotkey-overlay-title="Change Idle Time"           { spawn "sh" "-c" "$HOME/.config/scripts/change-idle-time.sh";}
-    Mod+Ctrl+P            hotkey-overlay-title="Power Off Monitors"         { spawn "sh" "-c" "niri msg action power-off-monitors | $HOME/.config/scripts/swaylock.sh"; }
+    Mod+Ctrl+P            { spawn "sh" "-c" "niri msg action power-off-monitors | $HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+P           hotkey-overlay-title="Change Power Profile"       { spawn "sh" "-c" "$HOME/.config/scripts/change-power-profile.sh";}
-    Mod+Escape           hotkey-overlay-title="Lock Computer"              { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
+    Mod+Escape            { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+W           hotkey-overlay-title="Reload Waybar"              { spawn "systemctl" "--user" "restart" "waybar.service"; }
     Mod+Shift+B           hotkey-overlay-title="Reload Swaybg.Service"      { spawn "systemctl" "--user" "restart" "swaybg.service"; }
     Mod+Shift+C           hotkey-overlay-title="Open Clipboard"             { spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
@@ -212,14 +213,14 @@ binds {
 
 //    Mod+Shift+Right       { focus-monitor-right; } example, but not using
 
-    Mod+Shift+Ctrl+J      { move-workspace-down; }
-    Mod+Shift+Ctrl+K      { move-workspace-up; }
+    Mod+Shift+Ctrl+J      hotkey-overlay-title="Move Workspace: Down"   { move-workspace-down; }
+    Mod+Shift+Ctrl+K      hotkey-overlay-title="Move Workspace: Up"     { move-workspace-up; }
 
-    Mod+Shift+J           { focus-workspace-down; }
-    Mod+Shift+K           { focus-workspace-up; }
+    Mod+Shift+J           hotkey-overlay-title="Focus Workspace: Down"  { focus-workspace-down; }
+    Mod+Shift+K           hotkey-overlay-title="Focus Workspace: Up"    { focus-workspace-up; }
 
-    Mod+Ctrl+Alt+J            { move-column-to-workspace-down; }
-    Mod+Ctrl+Alt+K            { move-column-to-workspace-up; }
+    Mod+Ctrl+Alt+J        hotkey-overlay-title="Move Column to Workspace: Down"   { move-column-to-workspace-down; }
+    Mod+Ctrl+Alt+K        hotkey-overlay-title="Move Column to Workspace: Up"     { move-column-to-workspace-up; }
 
 //    Mod+Shift+Ctrl+Left   { move-column-to-monitor-left; }
 //    Mod+Shift+Ctrl+Down   { move-column-to-monitor-down; }
