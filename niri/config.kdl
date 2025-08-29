@@ -24,12 +24,11 @@ output "eDP-1" {
     scale 1
     transform "normal"
     position x=1280 y=0
-    backdrop-color "#100a19"
+    backdrop-color "#111111"
 }
 
 cursor {
-  //    xcursor-theme "catppuccin-macchiato-dark-cursors"
-    xcursor-theme "GoogleDot-Black"
+    xcursor-theme "GoogleDot-Black" 
     xcursor-size 20
     hide-after-inactive-ms 5000
     hide-when-typing
@@ -37,25 +36,25 @@ cursor {
 
 layout {
     gaps 14
-    center-focused-column "on-overflow"
+    center-focused-column "never"
     always-center-single-column
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.66667; }
     focus-ring {
         width 3
-        active-color "#16364C"
-        inactive-color "#100a19"
+        active-color "#505049"
+        inactive-color "#111111"
         //active-gradient from="#b7bdf8" to="#181926" angle=0
     }
-    border { 
-       off 
-        width 3 
-        active-color "#16364C"
-        inactive-color "#100a19"
+    border {
+       off
+        width 3
+        active-color "#505049"
+        inactive-color "#111111"
         //urgent-color "#e5c890"
     }
     shadow {
@@ -81,7 +80,7 @@ prefer-no-csd
 // env
 environment {
 	DISPLAY ":0"
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
+  ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
 
 // screenshots
@@ -123,7 +122,6 @@ window-rule {
 // Fix OBS with server-side decorations missing a minimum width.
 window-rule {
     match app-id=r#"^com\.obsproject\.Studio$"#
-
     min-width 876
 }
 
@@ -163,20 +161,17 @@ window-rule {
 // keybinds
 binds {
     Mod+Shift+Slash                                                         { show-hotkey-overlay; }
-
-    Mod+T                 { spawn "kitty"; }
-    Mod+Shift+T           { spawn "kitty" "-e" "tmux"; }
-
-    Mod+D                 { spawn "fuzzel"; }
-    Mod+E                 { spawn "nautilus"; }
+    Mod+T                                                                   { spawn "kitty"; }
+    Mod+Shift+T                                                             { spawn "kitty" "-e" "tmux"; }
+    Mod+D                                                                   { spawn "fuzzel"; }
+    Mod+E                                                                   { spawn "nautilus"; }
     Mod+I                 hotkey-overlay-title="Change Idle Time"           { spawn "sh" "-c" "$HOME/.config/scripts/change-idle-time.sh";}
-    Mod+Ctrl+P            { spawn "sh" "-c" "niri msg action power-off-monitors | $HOME/.config/scripts/swaylock.sh"; }
+    Mod+Ctrl+P            hotkey-overlay-title="Power Off Monitors"         { spawn "sh" "-c" "niri msg action power-off-monitors | $HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+P           hotkey-overlay-title="Change Power Profile"       { spawn "sh" "-c" "$HOME/.config/scripts/change-power-profile.sh";}
-    Mod+Escape            { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
-    Mod+Shift+W           hotkey-overlay-title="Reload Waybar"              { spawn "systemctl" "--user" "restart" "waybar.service"; }
+    Mod+Escape                                                              { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
+    Mod+Shift+W                                                             { spawn "systemctl" "--user" "restart" "waybar.service"; }
     Mod+Shift+B           hotkey-overlay-title="Reload Swaybg.Service"      { spawn "systemctl" "--user" "restart" "swaybg.service"; }
-    Mod+Shift+C           hotkey-overlay-title="Open Clipboard"             { spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
-
+    Mod+Shift+C                                                             { spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
     XF86AudioRaiseVolume  allow-when-locked=true                            { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume  allow-when-locked=true                            { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     XF86AudioMute         allow-when-locked=true                            { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
@@ -184,6 +179,8 @@ binds {
     XF86MonBrightnessUp   allow-when-locked=true                            { spawn "brightnessctl" "set" "10%+"; }
     XF86MonBrightnessDown allow-when-locked=true                            { spawn "brightnessctl" "set" "10%-"; }
  
+    Mod+Shift+Ctrl+P                                                        { spawn "sh" "-c" "$HOME/.config/scripts/pywal.sh"; }
+
     Mod+O repeat=false    { toggle-overview; }
 
     Mod+Q                 { close-window; }
@@ -213,14 +210,14 @@ binds {
 
 //    Mod+Shift+Right       { focus-monitor-right; } example, but not using
 
-    Mod+Shift+Ctrl+J      hotkey-overlay-title="Move Workspace: Down"   { move-workspace-down; }
-    Mod+Shift+Ctrl+K      hotkey-overlay-title="Move Workspace: Up"     { move-workspace-up; }
+    Mod+Shift+Ctrl+J   hotkey-overlay-title="Move Workspace Down"   { move-workspace-down; }
+    Mod+Shift+Ctrl+K   hotkey-overlay-title="Move Workspace Up"   { move-workspace-up; }
 
-    Mod+Shift+J           hotkey-overlay-title="Focus Workspace: Down"  { focus-workspace-down; }
-    Mod+Shift+K           hotkey-overlay-title="Focus Workspace: Up"    { focus-workspace-up; }
+    Mod+Shift+J        hotkey-overlay-title="Focus Workspace Down"   { focus-workspace-down; }
+    Mod+Shift+K        hotkey-overlay-title="Focus Workspace Up"   { focus-workspace-up; }
 
-    Mod+Ctrl+Alt+J        hotkey-overlay-title="Move Column to Workspace: Down"   { move-column-to-workspace-down; }
-    Mod+Ctrl+Alt+K        hotkey-overlay-title="Move Column to Workspace: Up"     { move-column-to-workspace-up; }
+    Mod+Ctrl+Alt+J            { move-column-to-workspace-down; }
+    Mod+Ctrl+Alt+K            { move-column-to-workspace-up; }
 
 //    Mod+Shift+Ctrl+Left   { move-column-to-monitor-left; }
 //    Mod+Shift+Ctrl+Down   { move-column-to-monitor-down; }
@@ -287,9 +284,9 @@ binds {
     Print             { screenshot; }
     Ctrl+Print        { screenshot-screen; }
     Alt+Print         { screenshot-window; }
-    
- //   Mod+Escape        allow-inhibiting=false      { toggle-keyboard-shortcuts-inhibit; }
-    
+
+//   Mod+Escape        allow-inhibiting=false      { toggle-keyboard-shortcuts-inhibit; }
+
     Mod+Shift+E       { quit; }
     Ctrl+Alt+Delete   { quit; }
   }

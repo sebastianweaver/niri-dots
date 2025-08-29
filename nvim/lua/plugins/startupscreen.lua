@@ -30,7 +30,6 @@ return {
       dashboard.button("SPC e", "  New file", ":ene <BAR> startinsert <CR>"),
       dashboard.button("SPC q", "  Quit", ":qa<CR>"),
       dashboard.button("SPC u", "  Update plugins", ":Lazy update<CR>"),
-      dashboard.button("CTRL n", "  Open Neo tree", ":Neotree filesystem reveal left<CR>"),
     }
 
     alpha.setup(dashboard.opts)
