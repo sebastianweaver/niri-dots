@@ -1,0 +1,6 @@
+{
+    "scm.autoReveal": false,
+    "npm.autoDetect": "off",
+    "github.gitAuthentication": false,
+    "git.detectSubmodules": false
+}

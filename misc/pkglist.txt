@@ -51,6 +51,7 @@ file-roller
 firefox
 flatpak
 fuzzel
+galculator
 game-devices-udev
 gamescope
 gedit
@@ -258,6 +259,7 @@ xbindkeys
 xbindkeys_config-gtk2
 xclip
 xdg-desktop-portal-gnome
+xdg-desktop-portal-hyprland
 xf86-video-ati
 xf86-video-vesa
 xorg-bdftopcf
@@ -311,6 +313,7 @@ xorg-xwininfo
 xorg-xwud
 xorgxrdp
 xwayland-satellite
+xwaylandvideobridge
 yaru-gtk-theme
 yaru-icon-theme
 yay

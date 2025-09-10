@@ -18,23 +18,34 @@ input {
          accel-speed 0.2
     }
 }
+cursor {
+    xcursor-theme "GoogleDot-Black"
+    xcursor-size 20
+    hide-after-inactive-ms 5000
+    hide-when-typing
+}
 
 output "eDP-1" {
     mode "2560x1440@165.001" // `niri msg outputs`
     scale 1
     transform "normal"
     position x=1280 y=0
-    backdrop-color "#111111"
+    // backdrop-color "#101212"
 }
 
-cursor {
-    xcursor-theme "GoogleDot-Black" 
-    xcursor-size 20
-    hide-after-inactive-ms 5000
-    hide-when-typing
+layer-rule {
+    match namespace="^wallpaper$" // `niri msg layers`
+    place-within-backdrop true
+}
+
+overview {
+    workspace-shadow {
+       off
+    }
 }
 
 layout {
+    background-color "transparent"
     gaps 14
     center-focused-column "never"
     always-center-single-column
@@ -46,21 +57,20 @@ layout {
     default-column-width { proportion 0.66667; }
     focus-ring {
         width 3
-        active-color "#505049"
-        inactive-color "#111111"
-        //active-gradient from="#b7bdf8" to="#181926" angle=0
+        active-color "#3D6446"
+        inactive-color "#121a1b"
     }
     border {
        off
         width 3
-        active-color "#505049"
-        inactive-color "#111111"
+        active-color "#3D6446"
+        inactive-color "#121a1b"
         //urgent-color "#e5c890"
     }
     shadow {
         // on
         softness 30
-        spread 3
+        spread 5
     }
     struts {
         // nothing here
@@ -92,7 +102,6 @@ animations {
 }
 
 // window rules
-
 window-rule {
     match is-floating=true
     opacity 0.80
@@ -114,13 +123,12 @@ window-rule {
     }
 }
 
-window-rule {
+window-rule { // steam notifications top-right
     match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
     default-floating-position x=10 y=10 relative-to="top-right"
 }
 
-// Fix OBS with server-side decorations missing a minimum width.
-window-rule {
+window-rule { // Fix OBS with server-side decorations missing a minimum width.
     match app-id=r#"^com\.obsproject\.Studio$"#
     min-width 876
 }
@@ -143,6 +151,7 @@ window-rule {
     match title=r#"Preferences$"#
     match title=r#"Save File$"#
     match app-id=r#"nm-connection-editor$"#
+    match title=r#"galculator$"#
     open-floating true
     opacity 0.80
 }
@@ -284,8 +293,6 @@ binds {
     Print             { screenshot; }
     Ctrl+Print        { screenshot-screen; }
     Alt+Print         { screenshot-window; }
-
-//   Mod+Escape        allow-inhibiting=false      { toggle-keyboard-shortcuts-inhibit; }
 
     Mod+Shift+E       { quit; }
     Ctrl+Alt+Delete   { quit; }
