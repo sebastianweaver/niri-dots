@@ -77,14 +77,6 @@
   color: @foreground;
 }
 
-#workspaces button.visible {
-  color: @foreground;
-}
-
-#workspaces button.empty {
-  color: @foreground;
-}
-
 /* this is for the workspace button's highlight */
 button {
   box-shadow: inset 0 0 transparent;

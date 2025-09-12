@@ -5,29 +5,16 @@
   },
   "niri/window": {
     "format": "{}",
-    "max-length": 30,
+    "max-length": 5,
     "tooltip": false,
   },
   "niri/workspaces": {
     "all-outputs": true,
     "format": "{icon}",
-    "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-    },
     "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
       "default": "",
       "active": "",
     },
-    "disable-scroll-wraparound": true,
-    "smooth-scrolling-threshold": 4,
-    "enable-bar-scroll": true,
   },
   "clock#time": {
     "interval": 1,

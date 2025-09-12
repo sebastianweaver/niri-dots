@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-wy72xp.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#151009",
+        "foreground": "#c4c3c1",
+        "cursor": "#c4c3c1"
+    },
+    "colors": {
+        "color0": "#151009",
+        "color1": "#473B44",
+        "color2": "#695953",
+        "color3": "#996225",
+        "color4": "#8B756A",
+        "color5": "#9C8572",
+        "color6": "#8D7D82",
+        "color7": "#c4c3c1",
+        "color8": "#6c6358",
+        "color9": "#473B44",
+        "color10": "#695953",
+        "color11": "#996225",
+        "color12": "#8B756A",
+        "color13": "#9C8572",
+        "color14": "#8D7D82",
+        "color15": "#c4c3c1"
+    }
+}

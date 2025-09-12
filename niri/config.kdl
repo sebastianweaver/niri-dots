@@ -2,22 +2,17 @@
 
 input {
     keyboard {
-        xkb {
-        // nothing here
-        }
         numlock
-    }
+      }
     touchpad {
         tap
         natural-scroll
-    }
-    mouse {
-        // nothing here
-    }
+      }
     trackpoint {
-         accel-speed 0.2
-    }
+        accel-speed 0.2
+      }
 }
+
 cursor {
     xcursor-theme "GoogleDot-Black"
     xcursor-size 20
@@ -30,7 +25,7 @@ output "eDP-1" {
     scale 1
     transform "normal"
     position x=1280 y=0
-    // backdrop-color "#101212"
+    //  backdrop-color "#101212"
 }
 
 layer-rule {
@@ -40,41 +35,56 @@ layer-rule {
 
 overview {
     workspace-shadow {
-       off
-    }
+        off
+      }
 }
 
 layout {
     background-color "transparent"
-    gaps 14
     center-focused-column "never"
     always-center-single-column
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
-    }
+        fixed 1280
+      }
     default-column-width { proportion 0.66667; }
     focus-ring {
-        width 3
-        active-color "#B6851E"
-        inactive-color "#090404"
-    }
+        width 4
+        active-color "#C46996"
+        inactive-color "#3a1212"
+      }
     border {
-       off
+        off
         width 3
-        active-color "#B6851E"
-        inactive-color "#090404"
-        //urgent-color "#e5c890"
-    }
+        active-color "#C46996"
+        inactive-color "#3a1212"
+        // urgent-color "#e5c890"
+      }
     shadow {
         // on
         softness 30
         spread 5
-    }
+      }
+    gaps 24
     struts {
-        // nothing here
-    }
+        left 16
+        right 16
+        top 16
+        bottom 16
+      }
+    tab-indicator {
+        width 8
+        gap 8
+        length total-proportion=0.66667
+        gaps-between-tabs 16
+        position "left"
+        place-within-column
+        active-color "#C46996"
+        inactive-color "#3a1212"
+        corner-radius 8
+      }
 }
 
 // startup
@@ -89,38 +99,37 @@ prefer-no-csd
 
 // env
 environment {
-	DISPLAY ":0"
-  ELECTRON_OZONE_PLATFORM_HINT "auto"
+    DISPLAY ":0"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
 
 // screenshots
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d__%H-%M-%S.png"
 
-// animations ((off))
-animations {
-    // off
-}
+// workspaces
+workspace "browser"
+workspace "chat"
+workspace "projects"
 
 // window rules
 window-rule {
     match is-floating=true
     opacity 0.80
 
-    min-width 50
-    max-width 800
-    min-height 50
-    max-height 800
+    min-width 100
+    max-width 1000
+    min-height 100
+    max-height 1000
 
-        shadow {
-        on
-        // off
+    shadow {
+        //  on
         softness 70
         spread 5
         offset x=0 y=5
         draw-behind-window false
         color "#00000064"
         // inactive-color "#00000064"
-    }
+      }
 }
 
 window-rule { // steam notifications top-right
@@ -152,12 +161,13 @@ window-rule {
     match title=r#"Save File$"#
     match app-id=r#"nm-connection-editor$"#
     match title=r#"galculator$"#
+    
     open-floating true
     opacity 0.80
 }
 
 window-rule {
-    geometry-corner-radius 15
+//  geometry-corner-radius 15
     clip-to-geometry true
     tiled-state true
 }
@@ -165,6 +175,26 @@ window-rule {
 window-rule {
     match is-focused=true
     opacity 1.0
+}
+
+window-rule { // workspace: browser
+    match app-id=r#"firefox$"#
+   open-on-workspace "browser"
+   open-focused true
+}
+
+window-rule { // workspace: chat
+    match app-id=r#"discord$"#
+    open-on-workspace "chat"
+    open-focused true
+}
+
+window-rule { // workspoace: projects
+    match app-id=r#"^com\.obsproject\.Studio$"#
+    match app-id=r#"BambuStudioi$"#
+    match app-id=r#"obsidian$"#
+    open-on-workspace "projects"
+    open-focused true
 }
 
 // keybinds
@@ -217,7 +247,7 @@ binds {
     Mod+Ctrl+Home         { move-column-to-first; }
     Mod+Ctrl+End          { move-column-to-last; }
 
-//    Mod+Shift+Right       { focus-monitor-right; } example, but not using
+    // Mod+Shift+Right       { focus-monitor-right; } example, but not using
 
     Mod+Shift+Ctrl+J   hotkey-overlay-title="Move Workspace Down"   { move-workspace-down; }
     Mod+Shift+Ctrl+K   hotkey-overlay-title="Move Workspace Up"   { move-workspace-up; }
@@ -228,14 +258,14 @@ binds {
     Mod+Ctrl+Alt+J            { move-column-to-workspace-down; }
     Mod+Ctrl+Alt+K            { move-column-to-workspace-up; }
 
-//    Mod+Shift+Ctrl+Left   { move-column-to-monitor-left; }
-//    Mod+Shift+Ctrl+Down   { move-column-to-monitor-down; }
-//    Mod+Shift+Ctrl+Up     { move-column-to-monitor-up; }
-//    Mod+Shift+Ctrl+Right  { move-column-to-monitor-right; }
-//    Mod+Shift+Ctrl+H      { move-column-to-monitor-left; }
-//    Mod+Shift+Ctrl+J      { move-column-to-monitor-down; }
-//    Mod+Shift+Ctrl+K      { move-column-to-monitor-up; }
-//    Mod+Shift+Ctrl+L      { move-column-to-monitor-right; }
+    // Mod+Shift+Ctrl+Left   { move-column-to-monitor-left; }
+    // Mod+Shift+Ctrl+Down   { move-column-to-monitor-down; }
+    // Mod+Shift+Ctrl+Up     { move-column-to-monitor-up; }
+    // Mod+Shift+Ctrl+Right  { move-column-to-monitor-right; }
+    // Mod+Shift+Ctrl+H      { move-column-to-monitor-left; }
+    // Mod+Shift+Ctrl+J      { move-column-to-monitor-down; }
+    // Mod+Shift+Ctrl+K      { move-column-to-monitor-up; }
+    // Mod+Shift+Ctrl+L      { move-column-to-monitor-right; }
 
     Mod+WheelScrollDown         cooldown-ms=150     { focus-workspace-down; }
     Mod+WheelScrollUp           cooldown-ms=150     { focus-workspace-up; }
@@ -296,5 +326,9 @@ binds {
 
     Mod+Shift+E       { quit; }
     Ctrl+Alt+Delete   { quit; }
-  }
+}
 
+hotkey-overlay {
+  skip-at-startup
+  hide-not-bound
+}

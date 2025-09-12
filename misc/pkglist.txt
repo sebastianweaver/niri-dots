@@ -313,7 +313,6 @@ xorg-xwininfo
 xorg-xwud
 xorgxrdp
 xwayland-satellite
-xwaylandvideobridge
 yaru-gtk-theme
 yaru-icon-theme
 yay
