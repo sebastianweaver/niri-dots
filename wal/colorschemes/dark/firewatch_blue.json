@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/wp8968813-EA736.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f1824",
+        "foreground": "#c3c5c8",
+        "cursor": "#c3c5c8"
+    },
+    "colors": {
+        "color0": "#0f1824",
+        "color1": "#487098",
+        "color2": "#4875B1",
+        "color3": "#3975D5",
+        "color4": "#447CD3",
+        "color5": "#5686B4",
+        "color6": "#6792B9",
+        "color7": "#c3c5c8",
+        "color8": "#5e6774",
+        "color9": "#487098",
+        "color10": "#4875B1",
+        "color11": "#3975D5",
+        "color12": "#447CD3",
+        "color13": "#5686B4",
+        "color14": "#6792B9",
+        "color15": "#c3c5c8"
+    }
+}

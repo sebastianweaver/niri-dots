@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-eyv7xl-5BEAD.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#101010",
+        "foreground": "#c3c3c3",
+        "cursor": "#c3c3c3"
+    },
+    "colors": {
+        "color0": "#101010",
+        "color1": "#413F40",
+        "color2": "#4F4C49",
+        "color3": "#615D56",
+        "color4": "#66625A",
+        "color5": "#605D62",
+        "color6": "#706B68",
+        "color7": "#c3c3c3",
+        "color8": "#6c5959",
+        "color9": "#413F40",
+        "color10": "#4F4C49",
+        "color11": "#615D56",
+        "color12": "#66625A",
+        "color13": "#605D62",
+        "color14": "#706B68",
+        "color15": "#c3c3c3"
+    }
+}

@@ -160,12 +160,12 @@ button:hover {
 
 #custom-arrow7 {
   font-size: 20pt;
-  color: @color5;
+  color: @background;
   background: @color15;
 }
 
 #pulseaudio {
-  background-color: @color5;
+  background-color: @background;
   color: @foreground;
   font-weight: bold;
 }
@@ -178,7 +178,7 @@ button:hover {
 #custom-arrow6 {
   font-size: 20pt;
   color: @color15;
-  background: @color5;
+  background: @background;
 }
 
 #bluetooth {
@@ -198,13 +198,13 @@ button:hover {
 
 #battery {
   background-color: @color3;
-  color: @foreground;
+  color: @background;
   font-weight: bold;
 }
 
 #battery.critical:not(.charging) {
-  background-color: @background;
-  /*color: @foreground;*/
+  /*background-color: @background;*/
+  color: #ff0000;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;

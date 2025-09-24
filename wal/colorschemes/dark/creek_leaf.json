@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-exkg7w.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1c0c0c",
+        "foreground": "#c6c2c2",
+        "cursor": "#c6c2c2"
+    },
+    "colors": {
+        "color0": "#1c0c0c",
+        "color1": "#6C5C36",
+        "color2": "#6C634A",
+        "color3": "#797C72",
+        "color4": "#8B6E37",
+        "color5": "#89774D",
+        "color6": "#A4925C",
+        "color7": "#c6c2c2",
+        "color8": "#705b5b",
+        "color9": "#6C5C36",
+        "color10": "#6C634A",
+        "color11": "#797C72",
+        "color12": "#8B6E37",
+        "color13": "#89774D",
+        "color14": "#A4925C",
+        "color15": "#c6c2c2"
+    }
+}

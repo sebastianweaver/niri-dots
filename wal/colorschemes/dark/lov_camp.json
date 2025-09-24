@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-q6owe5.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#121210",
+        "foreground": "#c3c3c3",
+        "cursor": "#c3c3c3"
+    },
+    "colors": {
+        "color0": "#121210",
+        "color1": "#A18B52",
+        "color2": "#5B668A",
+        "color3": "#6F96BC",
+        "color4": "#9C9EA3",
+        "color5": "#A0B2CE",
+        "color6": "#CBBCC6",
+        "color7": "#c3c3c3",
+        "color8": "#6d6d59",
+        "color9": "#A18B52",
+        "color10": "#5B668A",
+        "color11": "#6F96BC",
+        "color12": "#9C9EA3",
+        "color13": "#A0B2CE",
+        "color14": "#CBBCC6",
+        "color15": "#c3c3c3"
+    }
+}

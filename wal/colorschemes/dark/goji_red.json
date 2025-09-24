@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/gdz.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#150909",
+        "foreground": "#c4c1c1",
+        "cursor": "#c4c1c1"
+    },
+    "colors": {
+        "color0": "#150909",
+        "color1": "#E92724",
+        "color2": "#C35347",
+        "color3": "#A4827D",
+        "color4": "#A5A39F",
+        "color5": "#D8B0AC",
+        "color6": "#D3D2CF",
+        "color7": "#c4c1c1",
+        "color8": "#6c5858",
+        "color9": "#E92724",
+        "color10": "#C35347",
+        "color11": "#A4827D",
+        "color12": "#A5A39F",
+        "color13": "#D8B0AC",
+        "color14": "#D3D2CF",
+        "color15": "#c4c1c1"
+    }
+}

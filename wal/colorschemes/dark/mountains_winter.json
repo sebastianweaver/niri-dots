@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/kurt-cotoaga-cqbLg3lZEpk-unsplash_modded-D0A49.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#101826",
+        "foreground": "#c3c5c8",
+        "cursor": "#c3c5c8"
+    },
+    "colors": {
+        "color0": "#101826",
+        "color1": "#737985",
+        "color2": "#7C828E",
+        "color3": "#9AA0AC",
+        "color4": "#B4BAC6",
+        "color5": "#BDC3CF",
+        "color6": "#C7CDD9",
+        "color7": "#c3c5c8",
+        "color8": "#5f6674",
+        "color9": "#737985",
+        "color10": "#7C828E",
+        "color11": "#9AA0AC",
+        "color12": "#B4BAC6",
+        "color13": "#BDC3CF",
+        "color14": "#C7CDD9",
+        "color15": "#c3c5c8"
+    }
+}

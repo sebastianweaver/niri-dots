@@ -8,9 +8,6 @@ font=JetBrainsMono Nerd Font 12
 margin=6
 outer-margin=20,18
 padding=8,10,8,10
-border-size=2
+border-size=4
 
-background-color=#0b190b89
-text-color=#c2c5c2
-border-color=#6C9FA7
-
+include=/home/cbash/.cache/wal/colors-mako

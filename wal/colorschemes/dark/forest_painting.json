@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/shishkin-the-forest-clearing-B1E9A.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1d1b10",
+        "foreground": "#c6c6c3",
+        "cursor": "#c6c6c3"
+    },
+    "colors": {
+        "color0": "#1d1b10",
+        "color1": "#887537",
+        "color2": "#8B7948",
+        "color3": "#8B873B",
+        "color4": "#908D4C",
+        "color5": "#ABA15D",
+        "color6": "#ACA973",
+        "color7": "#c6c6c3",
+        "color8": "#716d5d",
+        "color9": "#887537",
+        "color10": "#8B7948",
+        "color11": "#8B873B",
+        "color12": "#908D4C",
+        "color13": "#ABA15D",
+        "color14": "#ACA973",
+        "color15": "#c6c6c3"
+    }
+}

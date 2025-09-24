@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/unsplash-Fritz_Bielmeier-BAB25.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#111111",
+        "foreground": "#c3c3c3",
+        "cursor": "#c3c3c3"
+    },
+    "colors": {
+        "color0": "#111111",
+        "color1": "#B09067",
+        "color2": "#C6A577",
+        "color3": "#B9A287",
+        "color4": "#CEB492",
+        "color5": "#D3BDA1",
+        "color6": "#DAC8AC",
+        "color7": "#c3c3c3",
+        "color8": "#6e5959",
+        "color9": "#B09067",
+        "color10": "#C6A577",
+        "color11": "#B9A287",
+        "color12": "#CEB492",
+        "color13": "#D3BDA1",
+        "color14": "#DAC8AC",
+        "color15": "#c3c3c3"
+    }
+}

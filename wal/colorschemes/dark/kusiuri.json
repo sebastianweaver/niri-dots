@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/kusuriuri.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#141516",
+        "foreground": "#c4c4c4",
+        "cursor": "#c4c4c4"
+    },
+    "colors": {
+        "color0": "#141516",
+        "color1": "#99A363",
+        "color2": "#D8BB52",
+        "color3": "#A7D162",
+        "color4": "#50529E",
+        "color5": "#9957B0",
+        "color6": "#569CC4",
+        "color7": "#c4c4c4",
+        "color8": "#5c5c70",
+        "color9": "#99A363",
+        "color10": "#D8BB52",
+        "color11": "#A7D162",
+        "color12": "#50529E",
+        "color13": "#9957B0",
+        "color14": "#569CC4",
+        "color15": "#c4c4c4"
+    }
+}

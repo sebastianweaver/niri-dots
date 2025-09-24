@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/mountain-E0238.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#110707",
+        "foreground": "#c3c1c1",
+        "cursor": "#c3c1c1"
+    },
+    "colors": {
+        "color0": "#110707",
+        "color1": "#8E6E73",
+        "color2": "#B08579",
+        "color3": "#6D7491",
+        "color4": "#897988",
+        "color5": "#7685A3",
+        "color6": "#9E98A4",
+        "color7": "#c3c1c1",
+        "color8": "#6a5656",
+        "color9": "#8E6E73",
+        "color10": "#B08579",
+        "color11": "#6D7491",
+        "color12": "#897988",
+        "color13": "#7685A3",
+        "color14": "#9E98A4",
+        "color15": "#c3c1c1"
+    }
+}

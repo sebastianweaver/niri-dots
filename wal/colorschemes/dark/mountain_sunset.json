@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/ign_unsplash13-6A35E.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1a1e25",
+        "foreground": "#c5c6c8",
+        "cursor": "#c5c6c8"
+    },
+    "colors": {
+        "color0": "#1a1e25",
+        "color1": "#736169",
+        "color2": "#97696D",
+        "color3": "#C57C70",
+        "color4": "#B28475",
+        "color5": "#D59677",
+        "color6": "#697E8E",
+        "color7": "#c5c6c8",
+        "color8": "#626878",
+        "color9": "#736169",
+        "color10": "#97696D",
+        "color11": "#C57C70",
+        "color12": "#B28475",
+        "color13": "#D59677",
+        "color14": "#697E8E",
+        "color15": "#c5c6c8"
+    }
+}

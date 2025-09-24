@@ -147,9 +147,9 @@ window-rule {{
     match app-id="krita" title=r#"(.*)image(.*)$"#
     match app-id="krita" title=r#"Open(.*)$"#
     match app-id="krita" title=r#"(.*)Properties(.*)$"#
-    match title=r#"bluetuith$"#
+    match title=r#"kitty"# title="^bluetuith$"
     match title=r#"files$"#
-    match app-id=r#"File Roller$"#
+    match app-id=r#"org.gnome.FileRoller"#
     match app-id=r#"org.gnome.Calculator$"#
     match app-id=r#"pavucontrol$"#
     match app-id=r#"tweaks$"#
@@ -208,7 +208,7 @@ binds {{
     Mod+Ctrl+P            hotkey-overlay-title="Power Off Monitors"         {{ spawn "sh" "-c" "niri msg action power-off-monitors | $HOME/.config/scripts/swaylock.sh"; }}
     Mod+Shift+P           hotkey-overlay-title="Change Power Profile"       {{ spawn "sh" "-c" "$HOME/.config/scripts/change-power-profile.sh";}}
     Mod+Escape                                                              {{ spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }}
-    Mod+Shift+W                                                             {{ spawn "systemctl" "--user" "restart" "waybar.service"; }}
+    Mod+Shift+W           hotkey-overlay-title="Reload Waybar.Service"      {{ spawn "systemctl" "--user" "restart" "waybar.service"; }}
     Mod+Shift+B           hotkey-overlay-title="Reload Swaybg.Service"      {{ spawn "systemctl" "--user" "restart" "swaybg.service"; }}
     Mod+Shift+C                                                             {{ spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }}
     XF86AudioRaiseVolume  allow-when-locked=true                            {{ spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }}
@@ -218,8 +218,9 @@ binds {{
     XF86MonBrightnessUp   allow-when-locked=true                            {{ spawn "brightnessctl" "set" "10%+"; }}
     XF86MonBrightnessDown allow-when-locked=true                            {{ spawn "brightnessctl" "set" "10%-"; }}
  
-    Mod+Shift+Ctrl+P                                                        {{ spawn "sh" "-c" "$HOME/.config/scripts/pywal.sh"; }}
-
+    Mod+Shift+Ctrl+P      hotkey-overlay-title="Random wallpaper"           {{ spawn "sh" "-c" "$HOME/.config/scripts/pywal.sh"; }}
+    Mod+Shift+Ctrl+W      hotkey-overlay-title="Set wallpaper"              {{ spawn "sh" "-c" "$HOME/.config/scripts/change-wallpaper.sh"; }}
+    
     Mod+O repeat=false    {{ toggle-overview; }}
 
     Mod+Q                 {{ close-window; }}
@@ -249,14 +250,14 @@ binds {{
 
     // Mod+Shift+Right       {{ focus-monitor-right; }} example, but not using
 
-    Mod+Shift+Ctrl+J   hotkey-overlay-title="Move Workspace Down"   {{ move-workspace-down; }}
-    Mod+Shift+Ctrl+K   hotkey-overlay-title="Move Workspace Up"   {{ move-workspace-up; }}
+    Mod+Shift+Ctrl+J   hotkey-overlay-title="Move Workspace Down"              {{ move-workspace-down; }}
+    Mod+Shift+Ctrl+K   hotkey-overlay-title="Move Workspace Up"                {{ move-workspace-up; }}
 
-    Mod+Shift+J        hotkey-overlay-title="Focus Workspace Down"   {{ focus-workspace-down; }}
-    Mod+Shift+K        hotkey-overlay-title="Focus Workspace Up"   {{ focus-workspace-up; }}
+    Mod+Shift+J        hotkey-overlay-title="Focus Workspace Down"             {{ focus-workspace-down; }}
+    Mod+Shift+K        hotkey-overlay-title="Focus Workspace Up"               {{ focus-workspace-up; }}
 
-    Mod+Ctrl+Alt+J            {{ move-column-to-workspace-down; }}
-    Mod+Ctrl+Alt+K            {{ move-column-to-workspace-up; }}
+    Mod+Ctrl+Alt+J     hotkey-overlay-title="Move Column to Workspace Down"    {{ move-column-to-workspace-down; }}
+    Mod+Ctrl+Alt+K     hotkey-overlay-title="Move Column to Workspace Up"      {{ move-column-to-workspace-up; }}
 
     // Mod+Shift+Ctrl+Left   {{ move-column-to-monitor-left; }}
     // Mod+Shift+Ctrl+Down   {{ move-column-to-monitor-down; }}

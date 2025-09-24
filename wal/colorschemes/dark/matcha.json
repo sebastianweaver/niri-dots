@@ -1,0 +1,28 @@
+{
+  "wallpaper": "/home/cbash/Pictures/Wallpapers/matcha-1920-x-1080-AF668.jpg",
+  "alpha": "100",
+
+  "special": {
+    "background": "#1c240f",
+    "foreground": "#c6c8c3",
+    "cursor": "#c6c8c3"
+  },
+  "colors": {
+    "color0": "#1c240f",
+    "color1": "#887947",
+    "color2": "#73963A",
+    "color3": "#91AE53",
+    "color4": "#A1B948",
+    "color5": "#A3CA62",
+    "color6": "#627787",
+    "color7": "#c6c8c3",
+    "color8": "#6b745e",
+    "color9": "#887947",
+    "color10": "#73963A",
+    "color11": "#91AE53",
+    "color12": "#A1B948",
+    "color13": "#A3CA62",
+    "color14": "#627787",
+    "color15": "#c6c8c3"
+  }
+}

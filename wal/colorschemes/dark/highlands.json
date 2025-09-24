@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/unsplash-Robert_Haverly-F37D7.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#141815",
+        "foreground": "#c4c5c4",
+        "cursor": "#c4c5c4"
+    },
+    "colors": {
+        "color0": "#141815",
+        "color1": "#84743D",
+        "color2": "#877951",
+        "color3": "#7B8358",
+        "color4": "#9E9162",
+        "color5": "#C6AA77",
+        "color6": "#C7B18F",
+        "color7": "#c4c5c4",
+        "color8": "#5c715c",
+        "color9": "#84743D",
+        "color10": "#877951",
+        "color11": "#7B8358",
+        "color12": "#9E9162",
+        "color13": "#C6AA77",
+        "color14": "#C7B18F",
+        "color15": "#c4c5c4"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/wp3822885.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#3a1212",
+        "foreground": "#cdc3c3",
+        "cursor": "#cdc3c3"
+    },
+    "colors": {
+        "color0": "#3a1212",
+        "color1": "#C46996",
+        "color2": "#70A49B",
+        "color3": "#AAA8A0",
+        "color4": "#CF9BA6",
+        "color5": "#A6CBA7",
+        "color6": "#C3B0C6",
+        "color7": "#cdc3c3",
+        "color8": "#7c6565",
+        "color9": "#C46996",
+        "color10": "#70A49B",
+        "color11": "#AAA8A0",
+        "color12": "#CF9BA6",
+        "color13": "#A6CBA7",
+        "color14": "#C3B0C6",
+        "color15": "#cdc3c3"
+    }
+}

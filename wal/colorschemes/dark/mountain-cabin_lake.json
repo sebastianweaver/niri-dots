@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/SON7895-3E00C.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b0b1b",
+        "foreground": "#c2c2c6",
+        "cursor": "#c2c2c6"
+    },
+    "colors": {
+        "color0": "#0b0b1b",
+        "color1": "#926E5D",
+        "color2": "#7F8078",
+        "color3": "#A58C73",
+        "color4": "#3D5282",
+        "color5": "#58658F",
+        "color6": "#7A858B",
+        "color7": "#c2c2c6",
+        "color8": "#5a5a6f",
+        "color9": "#926E5D",
+        "color10": "#7F8078",
+        "color11": "#A58C73",
+        "color12": "#3D5282",
+        "color13": "#58658F",
+        "color14": "#7A858B",
+        "color15": "#c2c2c6"
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "wallpaper": "/home/cbash/Pictures/Wallpapers/zsgikm6mi3651-CAF95.png",
+  "alpha": "100",
+
+  "special": {
+    "background": "#070707",
+    "foreground": "#c2c0c0",
+    "cursor": "#c2c0c0"
+  },
+  "colors": {
+    "color0": "#070707",
+    "color1": "#7C7E81",
+    "color2": "#7F8183",
+    "color3": "#898A8C",
+    "color4": "#ACADAE",
+    "color5": "#BEC0C1",
+    "color6": "#D9D9D9",
+    "color7": "#c2c0c0",
+    "color8": "#3d3d3d",
+    "color9": "#7C7E81",
+    "color10": "#7F8183",
+    "color11": "#898A8C",
+    "color12": "#ACADAE",
+    "color13": "#BEC0C1",
+    "color14": "#D9D9D9",
+    "color15": "#c2c0c0"
+  }
+}

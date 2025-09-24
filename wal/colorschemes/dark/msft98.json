@@ -1,0 +1,28 @@
+{
+  "wallpaper": "/home/cbash/Pictures/Wallpapers/mirosoft-86E32.jpg",
+  "alpha": "100",
+
+  "special": {
+    "background": "#0f1d22",
+    "foreground": "#c3c6c7",
+    "cursor": "#c3c6c7"
+  },
+  "colors": {
+    "color0": "#0f1d22",
+    "color1": "#5AABB1",
+    "color2": "#6FB7B6",
+    "color3": "#68C1BB",
+    "color4": "#5FA7C4",
+    "color5": "#5e6e73",
+    "color6": "#9FC7BE",
+    "color7": "#c3c6c7",
+    "color8": "#5e6e73",
+    "color9": "#5AABB1",
+    "color10": "#6FB7B6",
+    "color11": "#68C1BB",
+    "color12": "#5FA7C4",
+    "color13": "#91B5B7",
+    "color14": "#9FC7BE",
+    "color15": "#c3c6c7"
+  }
+}

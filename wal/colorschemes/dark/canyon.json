@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/unsplash-Brennan_Burling-E4C96.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#19190a",
+        "foreground": "#c5c5c1",
+        "cursor": "#c5c5c1"
+    },
+    "colors": {
+        "color0": "#19190a",
+        "color1": "#9C7355",
+        "color2": "#B38862",
+        "color3": "#CF986B",
+        "color4": "#7E7F83",
+        "color5": "#9CAFB7",
+        "color6": "#BABCB1",
+        "color7": "#c5c5c1",
+        "color8": "#6e6e59",
+        "color9": "#9C7355",
+        "color10": "#B38862",
+        "color11": "#CF986B",
+        "color12": "#7E7F83",
+        "color13": "#9CAFB7",
+        "color14": "#BABCB1",
+        "color15": "#c5c5c1"
+    }
+}

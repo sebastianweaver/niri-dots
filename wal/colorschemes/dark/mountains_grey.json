@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/Wall-0D626.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b0b1b",
+        "foreground": "#c2c2c6",
+        "cursor": "#c2c2c6"
+    },
+    "colors": {
+        "color0": "#0b0b1b",
+        "color1": "#5F6062",
+        "color2": "#6F7072",
+        "color3": "#7E7F80",
+        "color4": "#7F8082",
+        "color5": "#909193",
+        "color6": "#939496",
+        "color7": "#c2c2c6",
+        "color8": "#5a5a6f",
+        "color9": "#5F6062",
+        "color10": "#6F7072",
+        "color11": "#7E7F80",
+        "color12": "#7F8082",
+        "color13": "#909193",
+        "color14": "#939496",
+        "color15": "#c2c2c6"
+    }
+}

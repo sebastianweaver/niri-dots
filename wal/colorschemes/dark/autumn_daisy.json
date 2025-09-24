@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-gwjq3d.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#121212",
+        "foreground": "#c3c3c3",
+        "cursor": "#c3c3c3"
+    },
+    "colors": {
+        "color0": "#121212",
+        "color1": "#6F4533",
+        "color2": "#6F4F4A",
+        "color3": "#9C4D25",
+        "color4": "#C25F2D",
+        "color5": "#A06659",
+        "color6": "#D58C6A",
+        "color7": "#c3c3c3",
+        "color8": "#6e5959",
+        "color9": "#6F4533",
+        "color10": "#6F4F4A",
+        "color11": "#9C4D25",
+        "color12": "#C25F2D",
+        "color13": "#A06659",
+        "color14": "#D58C6A",
+        "color15": "#c3c3c3"
+    }
+}
