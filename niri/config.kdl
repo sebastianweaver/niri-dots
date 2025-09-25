@@ -52,14 +52,14 @@ layout {
     default-column-width { proportion 0.66667; }
     focus-ring {
         width 4
-        active-color "#49534C"
-        inactive-color "#0a0e17"
+        active-color "#1B2763"
+        inactive-color "#04040a"
       }
     border {
         off
         width 3
-        active-color "#49534C"
-        inactive-color "#0a0e17"
+        active-color "#1B2763"
+        inactive-color "#04040a"
         // urgent-color "#e5c890"
       }
     shadow {
@@ -81,8 +81,8 @@ layout {
         gaps-between-tabs 16
         position "left"
         place-within-column
-        active-color "#49534C"
-        inactive-color "#0a0e17"
+        active-color "#1B2763"
+        inactive-color "#04040a"
         corner-radius 8
       }
 }
