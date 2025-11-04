@@ -40,6 +40,8 @@ darkman
 dart-sass
 discord_arch_electron
 dnstop-git
+docbook-utils
+docbook-xsl
 efibootmgr
 electron
 eog
@@ -58,6 +60,7 @@ gedit
 gedit-plugins
 git
 github-cli
+gnome-keyring
 gnome-photos
 gnome-screenshot
 gnome-themes-extra
@@ -70,6 +73,7 @@ gradience
 greetd-gtkgreet
 greetd-tuigreet
 grub
+gtk-vnc
 inotify-tools
 inxi
 jnettop
@@ -79,10 +83,12 @@ kvantum
 kwin-effects-forceblur
 lazygit
 lib32-nvidia-utils
+libgnome-keyring
 libplist-git
 libreoffice-fresh
 libva-nvidia-driver-git
 libva-utils
+libvncserver
 linux
 linux-firmware
 linux-headers
@@ -157,6 +163,8 @@ remmina
 ripgrep
 sddm
 seahorse
+spice-gtk
+spice-protocol
 spicetify-cli-git
 spicetify-themes-git
 spotify
@@ -179,6 +187,7 @@ themix-icons-suru-plus-aspromauros-git
 themix-icons-suru-plus-git
 themix-theme-materia-git
 thunar
+tigervnc
 timeshift
 tmux
 ttf-0xproto-nerd

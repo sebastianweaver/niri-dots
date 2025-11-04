@@ -43,37 +43,38 @@ layout {
     background-color "transparent"
     center-focused-column "never"
     always-center-single-column
+
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
-        fixed 1280
+        proportion 1.0
       }
-    default-column-width { proportion 0.66667; }
+
+    preset-window-heights { // Mod+Shift+H
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+
+    default-column-width { 
+        proportion 0.5;
+    }
     focus-ring {
         width 4
-        active-color "#1B2763"
-        inactive-color "#04040a"
-      }
-    border {
-        off
-        width 3
-        active-color "#1B2763"
-        inactive-color "#04040a"
-        // urgent-color "#e5c890"
-      }
-    shadow {
-        // on
-        softness 30
-        spread 5
+        active-color "#694A39"
+        inactive-color "#1f1c1a"
       }
     gaps 24
+
     struts {
         left 16
         right 16
         top 16
         bottom 16
       }
+
     tab-indicator {
         width 8
         gap 8
@@ -81,8 +82,8 @@ layout {
         gaps-between-tabs 16
         position "left"
         place-within-column
-        active-color "#1B2763"
-        inactive-color "#04040a"
+        active-color "#694A39"
+        inactive-color "#1f1c1a"
         corner-radius 8
       }
 }
@@ -113,21 +114,32 @@ workspace "projects"
 
 // window rules
 window-rule {
+  match is-floating=false
+  shadow {
+    on
+    softness 1
+    spread 1
+    offset x=8 y=8
+    draw-behind-window false
+  }
+}
+
+window-rule {
     match is-floating=true
     opacity 0.80
 
     min-width 100
-    max-width 1000
+    max-width 2000
     min-height 100
-    max-height 1000
+    max-height 2000
 
     shadow {
-        //  on
-        softness 70
-        spread 5
-        offset x=0 y=5
+        on
+        softness 2
+        spread 2
+        offset x=10 y=10
         draw-behind-window false
-        color "#00000064"
+        color "#00000085"
         // inactive-color "#00000064"
       }
 }
@@ -143,11 +155,12 @@ window-rule { // Fix OBS with server-side decorations missing a minimum width.
 }
 
 window-rule {
+    match app-id=r#"org.mozilla.firefox$"# title="^Picture-in-Picture$"
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id="krita" title=r#"(.*)image(.*)$"#
     match app-id="krita" title=r#"Open(.*)$"#
     match app-id="krita" title=r#"(.*)Properties(.*)$"#
-    match title=r#"kitty"# title="^bluetuith$"
+    match title=r#"bluetuith$"#
     match title=r#"files$"#
     match app-id=r#"org.gnome.FileRoller"#
     match app-id=r#"org.gnome.Calculator$"#
@@ -163,7 +176,6 @@ window-rule {
     match title=r#"galculator$"#
     
     open-floating true
-    opacity 0.80
 }
 
 window-rule {
@@ -178,39 +190,43 @@ window-rule {
 }
 
 window-rule { // workspace: browser
-    match app-id=r#"firefox$"#
+   match app-id=r#"firefox$"#
    open-on-workspace "browser"
+   open-maximized true
    open-focused true
 }
 
 window-rule { // workspace: chat
-    match app-id=r#"discord$"#
+    match app-id="discord$" title=".*"
     open-on-workspace "chat"
     open-focused true
+    open-maximized true
+    block-out-from "screen-capture"
 }
 
 window-rule { // workspoace: projects
     match app-id=r#"^com\.obsproject\.Studio$"#
-    match app-id=r#"BambuStudioi$"#
+    match app-id=r#"BambuStudio$"#
     match app-id=r#"obsidian$"#
     open-on-workspace "projects"
-    open-focused true
+    open-maximized true
 }
 
 // keybinds
 binds {
     Mod+Shift+Slash                                                         { show-hotkey-overlay; }
-    Mod+T                                                                   { spawn "kitty"; }
-    Mod+Shift+T                                                             { spawn "kitty" "-e" "tmux"; }
-    Mod+D                                                                   { spawn "fuzzel"; }
-    Mod+E                                                                   { spawn "nautilus"; }
+    Mod+T                 hotkey-overlay-title="kitty"                      { spawn "kitty"; }
+    Mod+Shift+T           hotkey-overlay-title="tmux"                       { spawn "kitty" "-e" "tmux"; }
+    Mod+D                 hotkey-overlay-title="fuzzel"                     { spawn "fuzzel"; }
+    Mod+E                 hotkey-overlay-title="nautilus"                   { spawn "nautilus"; }
     Mod+I                 hotkey-overlay-title="Change Idle Time"           { spawn "sh" "-c" "$HOME/.config/scripts/change-idle-time.sh";}
     Mod+Ctrl+P            hotkey-overlay-title="Power Off Monitors"         { spawn "sh" "-c" "niri msg action power-off-monitors | $HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+P           hotkey-overlay-title="Change Power Profile"       { spawn "sh" "-c" "$HOME/.config/scripts/change-power-profile.sh";}
-    Mod+Escape                                                              { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
+    Mod+Escape            hotkey-overlay-title="Lock Screen"                { spawn "sh" "-c" "$HOME/.config/scripts/swaylock.sh"; }
     Mod+Shift+W           hotkey-overlay-title="Reload Waybar.Service"      { spawn "systemctl" "--user" "restart" "waybar.service"; }
     Mod+Shift+B           hotkey-overlay-title="Reload Swaybg.Service"      { spawn "systemctl" "--user" "restart" "swaybg.service"; }
-    Mod+Shift+C                                                             { spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
+    Mod+Shift+C           hotkey-overlay-title="Clipboard History"          { spawn "sh" "-c" "cliphist list | fuzzel --dmenu --config $HOME/.config/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
+    
     XF86AudioRaiseVolume  allow-when-locked=true                            { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume  allow-when-locked=true                            { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     XF86AudioMute         allow-when-locked=true                            { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
@@ -319,7 +335,7 @@ binds {
     Mod+Shift+Equal   { set-window-height "+10%"; }
     Mod+V             { toggle-window-floating; }
     Mod+Shift+V       { switch-focus-between-floating-and-tiling; }
-    Mod+W             { toggle-column-tabbed-display; }
+    Mod+W             hotkey-overlay-title="Create Column Tab"  { toggle-column-tabbed-display; }
 
     Print             { screenshot; }
     Ctrl+Print        { screenshot-screen; }

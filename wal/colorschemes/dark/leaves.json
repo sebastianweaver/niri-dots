@@ -1,0 +1,29 @@
+{
+  "checksum": "49023f52495a75925e811277be02e8ce",
+  "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-qzg5dr.jpg",
+  "alpha": "100",
+  "special": {
+    "background": "#1f1c1a",
+    "foreground": "#c7c7c2",
+    "cursor": "#c7c7c2"
+  },
+  "colors": {
+    "color0": "#1f1c1a",
+    "color1": "#694A39",
+    "color2": "#3C3F40",
+    "color3": "#3D4343",
+    "color4": "#4D4C4A",
+    "color5": "#69554A",
+    "color6": "#6C6763",
+    "color7": "#c7c7c2",
+    "color8": "#71715c",
+    "color9": "#694A39",
+    "color10": "#3C3F40",
+    "color11": "#3D4343",
+    "color12": "#4D4C4A",
+    "color13": "#69554A",
+    "color14": "#6C6763",
+    "color15": "#c7c7c2"
+  }
+}
+

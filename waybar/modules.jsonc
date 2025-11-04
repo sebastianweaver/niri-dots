@@ -51,8 +51,8 @@
     "format-charging": "",
     "format-plugged": "",
     "format-alt": "{time} {icon}",
-    "on-scroll-up": "brightnessctl -c backlight set +1; notify-send -c system ' Brightness: '$(brightnessctl -m | cut -d',' -f4) ",
-    "on-scroll-down": "brightnessctl -c backlight set 1-; notify-send -c system ' Brightness: '$(brightnessctl -m | cut -d',' -f4) ",
+    "on-scroll-up": "brightnessctl -c backlight set +1000; notify-send -c system ' Brightness: '$(brightnessctl -m | cut -d',' -f4) ",
+    "on-scroll-down": "brightnessctl -c backlight set 1000-; notify-send -c system ' Brightness: '$(brightnessctl -m | cut -d',' -f4) ",
     "format-icons": ["", "", "", "", ""],
   },
   "custom/swayidle": {

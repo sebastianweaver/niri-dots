@@ -12,16 +12,16 @@ swaylock \
   --effect-blur 4x2 \
   --datestr "%A, %b %d" \
   --timestr "%k:%M" \
-  --key-hl-color 26356Df2 \
-  --ring-color 26356Df2 \
-  --text-color c0c0c1e6 \
-  --inside-clear-color 04040af2 \
-  --ring-clear-color 26356Df2 \
-  --text-clear-color c0c0c1e6 \
-  --inside-ver-color 04040af2 \
-  --ring-ver-color 26356Df2 \
-  --text-ver-color c0c0c1e6 \
-  --bs-hl-color 1B2763ff \
-  --inside-wrong-color 2E417Cff \
-  --ring-wrong-color 2E417Cff \
-  --text-wrong-color c0c0c1ff
+  --key-hl-color 3C3F40f2 \
+  --ring-color 3C3F40f2 \
+  --text-color c7c7c2e6 \
+  --inside-clear-color 1f1c1af2 \
+  --ring-clear-color 3C3F40f2 \
+  --text-clear-color c7c7c2e6 \
+  --inside-ver-color 1f1c1af2 \
+  --ring-ver-color 3C3F40f2 \
+  --text-ver-color c7c7c2e6 \
+  --bs-hl-color 694A39ff \
+  --inside-wrong-color 4D4C4Aff \
+  --ring-wrong-color 4D4C4Aff \
+  --text-wrong-color c7c7c2ff
