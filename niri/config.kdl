@@ -1,16 +1,25 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
 
 input {
+    focus-follows-mouse
     keyboard {
         numlock
       }
     touchpad {
         tap
+        tap-button-map "left-right-middle"
         natural-scroll
+        scroll-factor 0.5
+        accel-speed 0.2
       }
     trackpoint {
         accel-speed 0.2
       }
+    mouse {
+        natural-scroll
+        scroll-factor 0.5
+        middle-emulation
+    }
 }
 
 cursor {
@@ -63,8 +72,8 @@ layout {
     }
     focus-ring {
         width 4
-        active-color "#694A39"
-        inactive-color "#1f1c1a"
+        active-color "#885132"
+        inactive-color "#150909"
       }
     gaps 24
 
@@ -82,8 +91,8 @@ layout {
         gaps-between-tabs 16
         position "left"
         place-within-column
-        active-color "#694A39"
-        inactive-color "#1f1c1a"
+        active-color "#885132"
+        inactive-color "#150909"
         corner-radius 8
       }
 }

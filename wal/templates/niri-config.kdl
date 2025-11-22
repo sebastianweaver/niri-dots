@@ -1,16 +1,25 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
 
 input {{
+    focus-follows-mouse
     keyboard {{
         numlock
       }}
     touchpad {{
         tap
+        tap-button-map "left-right-middle"
         natural-scroll
+        scroll-factor 0.5
+        accel-speed 0.2
       }}
     trackpoint {{
         accel-speed 0.2
       }}
+    mouse {{
+        natural-scroll
+        scroll-factor 0.5
+        middle-emulation
+    }}
 }}
 
 cursor {{
