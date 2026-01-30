@@ -1,7 +1,6 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
 
 input {
-    focus-follows-mouse
     keyboard {
         numlock
       }
@@ -16,7 +15,7 @@ input {
         accel-speed 0.2
       }
     mouse {
-        natural-scroll
+        //natural-scroll
         scroll-factor 0.5
         middle-emulation
     }
@@ -72,16 +71,16 @@ layout {
     }
     focus-ring {
         width 4
-        active-color "#885132"
-        inactive-color "#150909"
+        active-color "#2B9077"
+        inactive-color "#06080d"
       }
     gaps 24
 
     struts {
-        left 16
-        right 16
-        top 16
-        bottom 16
+        left 12
+        right 12
+        top 0
+        bottom 0
       }
 
     tab-indicator {
@@ -91,8 +90,8 @@ layout {
         gaps-between-tabs 16
         position "left"
         place-within-column
-        active-color "#885132"
-        inactive-color "#150909"
+        active-color "#2B9077"
+        inactive-color "#06080d"
         corner-radius 8
       }
 }
@@ -104,6 +103,7 @@ spawn-at-startup "sh" "-c" "pkill swayidle; echo '10 minutes' > $HOME/.local/sta
 spawn-at-startup "discord" "--start-minimized" "--no-sandbox" "--enable-accelerated-mjpeg-decode" "--enable-accelerated-video" "--ignore-gpu-blacklist" "--enable-native-gpu-memory-buffers" "--enable-gpu-rasterization"
 spawn-at-startup "wal" "-R"
 spawn-at-startup "systemctl" "--user" "restart" "waybar.service"
+spawn-at-startup "sh" "-c" ". ~/.cache/wal/colors-openrgb.sh"
 
 prefer-no-csd
 

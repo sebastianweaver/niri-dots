@@ -1,0 +1,29 @@
+{
+  "checksum": "f0b20cc3ff539333c097d0dd8ecca3c3",
+  "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-471xko.jpg",
+  "alpha": "100",
+  "special": {
+    "background": "#111111",
+    "foreground": "#c5c2c2",
+    "cursor": "#c5c2c2"
+  },
+  "colors": {
+    "color0": "#111111",
+    "color1": "#44A743",
+    "color2": "#E1C13A",
+    "color3": "#1E43B0",
+    "color4": "#BC4AB9",
+    "color5": "#35BFDF",
+    "color6": "#C2CDCA",
+    "color7": "#c5c2c2",
+    "color8": "#6f5a5a",
+    "color9": "#44A743",
+    "color10": "#E1C13A",
+    "color11": "#1E43B0",
+    "color12": "#BC4AB9",
+    "color13": "#35BFDF",
+    "color14": "#C2CDCA",
+    "color15": "#c5c2c2"
+  }
+}
+

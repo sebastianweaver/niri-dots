@@ -1,0 +1,29 @@
+{
+  "checksum": "7d050c962b008d588daa50ae65b676f5",
+  "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-r2oeo1.png",
+  "alpha": "100",
+  "special": {
+    "background": "#111111",
+    "foreground": "#d8dbcb",
+    "cursor": "#d8dbcb"
+  },
+  "colors": {
+    "color0": "#111111",
+    "color1": "#444444",
+    "color2": "#778377",
+    "color3": "#dafc53",
+    "color4": "#AEB9AE",
+    "color5": "#e5efbd",
+    "color6": "#cdf23c",
+    "color7": "#d8dbcb",
+    "color8": "#343827",
+    "color9": "#454545",
+    "color10": "#778377",
+    "color11": "#dafc53",
+    "color12": "#AEB9AE",
+    "color13": "#e5efbd",
+    "color14": "#cdf23c",
+    "color15": "#d8dbcb"
+  }
+}
+

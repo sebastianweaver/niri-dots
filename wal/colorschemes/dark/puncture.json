@@ -1,0 +1,28 @@
+{
+    "checksum": "b734ba6f513bf4c69853837d02dd6de1",
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/puncture.gif",
+    "alpha": "100",
+    "special": {
+        "background": "#06080d",
+        "foreground": "#c0c1c2",
+        "cursor": "#c0c1c2"
+    },
+    "colors": {
+        "color0": "#06080d",
+        "color1": "#2B9077",
+        "color2": "#59A171",
+        "color3": "#51F177",
+        "color4": "#A3D579",
+        "color5": "#34AF88",
+        "color6": "#5CCD87",
+        "color7": "#c0c1c2",
+        "color8": "#555a68",
+        "color9": "#2B9077",
+        "color10": "#59A171",
+        "color11": "#51F177",
+        "color12": "#A3D579",
+        "color13": "#34AF88",
+        "color14": "#5CCD87",
+        "color15": "#c0c1c2"
+    }
+}

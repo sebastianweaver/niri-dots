@@ -1,27 +1,17 @@
 #!/bin/bash
-niri msg action do-screen-transition --delay-ms 300
-swaylock \
-  --clock \
-  --screenshots \
-  --daemonize \
-  --ignore-empty-password \
-  --indicator \
-  --indicator-radius 150 \
-  --effect-scale 0.4 \
-  --effect-vignette 0.2:0.5 \
-  --effect-blur 4x2 \
-  --datestr "%A, %b %d" \
-  --timestr "%k:%M" \
-  --key-hl-color 8E6E54f2 \
-  --ring-color 8E6E54f2 \
-  --text-color c4c1c1e6 \
-  --inside-clear-color 150909f2 \
-  --ring-clear-color 8E6E54f2 \
-  --text-clear-color c4c1c1e6 \
-  --inside-ver-color 150909f2 \
-  --ring-ver-color 8E6E54f2 \
-  --text-ver-color c4c1c1e6 \
-  --bs-hl-color 885132ff \
-  --inside-wrong-color A28771ff \
-  --ring-wrong-color A28771ff \
-  --text-wrong-color c4c1c1ff
+
+if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+  swaylock --help 2>&1 | sed -e 's/swaylock/swaylock-corrupter/g' -e '/--image/d' 1>&2
+else
+  DISPLAYS="$(niri msg outputs | grep 'Output' | awk '{print $6}' | grep -Po '\(\K[^)]*')"
+  BASE_FILE="${TMPDIR:-/tmp/ss}"
+
+  for display in $DISPLAYS; do
+    FILE="${BASE_FILE}${display}.png"
+    grim -o "$display" "$FILE"
+    corrupter "$FILE" "$FILE"
+    args="$args -i ${display}:${FILE}"
+  done
+
+  swaylock --inside-color 00000001 --inside-wrong-color ff000080 --inside-ver-color 00000000 --inside-clear-color ff800080 --ring-color ffffff --ring-clear-color ffffffff --ring-wrong-color ffffffff --key-hl-color ffffff --bs-hl-color 808080 --text-ver-color 00000000 --ring-ver-color 808080 $args "$@"
+fi

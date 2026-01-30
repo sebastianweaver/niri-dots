@@ -1,0 +1,28 @@
+{
+    "checksum": "397283d172b573b5519433a89d8e757a",
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/pridwen.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d1e",
+        "foreground": "#c2c2c6",
+        "cursor": "#c2c2c6"
+    },
+    "colors": {
+        "color0": "#0d0d1e",
+        "color1": "#49534C",
+        "color2": "#5B644C",
+        "color3": "#6D7349",
+        "color4": "#877D54",
+        "color5": "#7B8046",
+        "color6": "#A2985F",
+        "color7": "#c2c2c6",
+        "color8": "#5c5c70",
+        "color9": "#49534C",
+        "color10": "#5B644C",
+        "color11": "#6D7349",
+        "color12": "#877D54",
+        "color13": "#7B8046",
+        "color14": "#A2985F",
+        "color15": "#c2c2c6"
+    }
+}

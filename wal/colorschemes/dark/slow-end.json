@@ -1,0 +1,28 @@
+{
+    "checksum": "ac6054d4ed54590140e71fb2ef302690",
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/slow-end.gif",
+    "alpha": "100",
+    "special": {
+        "background": "#140c1b",
+        "foreground": "#c4c2c6",
+        "cursor": "#c4c2c6"
+    },
+    "colors": {
+        "color0": "#140c1b",
+        "color1": "#4D2C56",
+        "color2": "#5C3665",
+        "color3": "#3B546B",
+        "color4": "#5D4D75",
+        "color5": "#6E5382",
+        "color6": "#697295",
+        "color7": "#c4c2c6",
+        "color8": "#665b6f",
+        "color9": "#4D2C56",
+        "color10": "#5C3665",
+        "color11": "#3B546B",
+        "color12": "#5D4D75",
+        "color13": "#6E5382",
+        "color14": "#697295",
+        "color15": "#c4c2c6"
+    }
+}

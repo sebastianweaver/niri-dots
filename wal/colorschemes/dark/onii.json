@@ -1,0 +1,28 @@
+{
+    "checksum": "6d8a2950ea0938fee13927b210788a10",
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/wallhaven-9mkk38.png",
+    "alpha": "100",
+    "special": {
+        "background": "#090404",
+        "foreground": "#c1c0c0",
+        "cursor": "#c1c0c0"
+    },
+    "colors": {
+        "color0": "#090404",
+        "color1": "#5A615F",
+        "color2": "#904C4B",
+        "color3": "#5F827D",
+        "color4": "#639A97",
+        "color5": "#6ED1CF",
+        "color6": "#9B9E9C",
+        "color7": "#c1c0c0",
+        "color8": "#665353",
+        "color9": "#5A615F",
+        "color10": "#904C4B",
+        "color11": "#5F827D",
+        "color12": "#639A97",
+        "color13": "#6ED1CF",
+        "color14": "#9B9E9C",
+        "color15": "#c1c0c0"
+    }
+}

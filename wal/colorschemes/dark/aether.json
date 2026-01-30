@@ -1,0 +1,28 @@
+{
+    "checksum": "eda60358495a4947d945beb19d5a310c",
+    "wallpaper": "/home/cbash/Pictures/Wallpapers/aether.png",
+    "alpha": "100",
+    "special": {
+        "background": "#090d16",
+        "foreground": "#c1c2c4",
+        "cursor": "#c1c2c4"
+    },
+    "colors": {
+        "color0": "#090d16",
+        "color1": "#227879",
+        "color2": "#2E8C7B",
+        "color3": "#4FE679",
+        "color4": "#9DD278",
+        "color5": "#34AD87",
+        "color6": "#4DB485",
+        "color7": "#c1c2c4",
+        "color8": "#595e6c",
+        "color9": "#227879",
+        "color10": "#2E8C7B",
+        "color11": "#4FE679",
+        "color12": "#9DD278",
+        "color13": "#34AD87",
+        "color14": "#4DB485",
+        "color15": "#c1c2c4"
+    }
+}

@@ -20,7 +20,7 @@ bambustudio-bin
 base
 base-devel
 battop
-betterdiscord-git
+betterdiscord-installer-bin
 betterdiscordctl
 blender
 bluetuith
@@ -36,6 +36,8 @@ catppuccin-gtk-theme-mocha
 cava
 cliphist
 conky
+corrupter-git
+corrupter-git-debug
 cuda
 darkman
 dart-sass
@@ -59,6 +61,7 @@ gedit
 gedit-plugins
 git
 github-cli
+gnome-connections
 gnome-photos
 gnome-screenshot
 gnome-themes-extra
@@ -71,6 +74,7 @@ gradience
 greetd-gtkgreet
 greetd-tuigreet
 grub
+gtk-vnc
 inotify-tools
 inxi
 jnettop
@@ -162,6 +166,7 @@ ripgrep
 samba
 sddm
 seahorse
+smartmontools
 spicetify-cli-git
 spicetify-themes-git
 spotify
